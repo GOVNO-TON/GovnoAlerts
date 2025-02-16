@@ -40,8 +40,7 @@
 5. Запустите проект:
 
     ```
-    cd src
-    python main.py
+    python src/main.py
     ```
 6. Настройте конфигурацию в настройках программы:
 - Укажите API - ключ [TonCenter](https://t.me/toncenter);
