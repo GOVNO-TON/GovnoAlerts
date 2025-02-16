@@ -44,8 +44,8 @@ class InitBlock(JsonHandler):
         if not self.data_sound:
             self.data_sound = {
                 "lang": "ru",
-                "pitch": "100",
-                "scale": "-20",
+                "pitch": "1.00",
+                "scale": "100",
                 "len_msg" : "200",
             }
             self.save_json(self.JSON_FILE_SOUND, {"settings": self.data_sound})
@@ -83,7 +83,6 @@ class InitBlock(JsonHandler):
             path_to_ffprobe = self.path(path_to_python, "ffprobe.exe")
             path_to_ffplay = self.path(path_to_python, "ffplay.exe")
             if not (path_to_ffmpeg.exists() and path_to_ffprobe.exists() and path_to_ffplay.exists()):
-                print("zalupa")
                 copy(self.path(self.LOCAL_PATH, "src", "Components", "core", "ffmpeg", "ffmpeg.exe"), path_to_ffmpeg)
                 copy(self.path(self.LOCAL_PATH, "src", "Components", "core", "ffmpeg", "ffprobe.exe"), path_to_ffprobe)
                 copy(self.path(self.LOCAL_PATH, "src", "Components", "core","ffmpeg", "ffplay.exe"), path_to_ffplay)
