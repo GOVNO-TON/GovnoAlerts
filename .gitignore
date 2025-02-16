@@ -183,3 +183,8 @@ cython_debug/
 .Trashes
 .AppleDouble
 .LSOverride
+
+# Program Generated Files
+*.gif
+*.mp3
+*.json

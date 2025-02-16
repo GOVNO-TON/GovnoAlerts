@@ -91,9 +91,9 @@ class Speaker:
             else:
                 os.system(f"mpg123 {self.__audio_path[:-4]}_fixed.mp3")  # Для Linux/Macos
 
-if __name__ == "__main__":
-    from pathlib import Path
-    LOCAL_PATH = Path(__file__).resolve().parent.parent
-    test = Speaker("ru", scale=100, audio_path=Path(LOCAL_PATH, "data/sounds/temp/voice.mp3"), pitch=1.2)
-    # test.play_sound(text="тестируем текст", )
-    print(test.audio_create_and_transform(text='НУЖНО СЛИТЬ ЖЕТОНЫ $TONЧТОБЫ КЭШ ЗАЛИТЬ В $GOVNO ПОТОМ', file_path=Path(LOCAL_PATH, "data/sounds/temp/voice.mp3")))
+# if __name__ == "__main__":
+#     from pathlib import Path
+#     LOCAL_PATH = Path(__file__).resolve().parent.parent
+#     test = Speaker("ru", scale=100, audio_path=Path(LOCAL_PATH, "data/sounds/temp/voice.mp3"), pitch=1.2)
+#     # test.play_sound(text="тестируем текст", )
+#     print(test.audio_create_and_transform(text='НУЖНО СЛИТЬ ЖЕТОНЫ $TONЧТОБЫ КЭШ ЗАЛИТЬ В $GOVNO ПОТОМ', file_path=Path(LOCAL_PATH, "data/sounds/temp/voice.mp3")))

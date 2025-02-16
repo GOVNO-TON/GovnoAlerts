@@ -29,9 +29,7 @@ class VoiceTab():
     
     def play_test(self):
         scale = self.ui.volume_slider.value()
-        print(scale, "sacle")
         pitch = self.ui.speed_slider.value() / 100
-        print(pitch, "pithc")
         lang = self.ui.change_lang_comboBox.currentData()
         text = self.ui.test_msg_textbox.toPlainText()
         

@@ -693,10 +693,6 @@ class Ui_MainWindow(object):
         self.telegram_link_1.setText(_translate("MainWindow", "@LanArch1"))
         self.telegram_link_2.setText(_translate("MainWindow", "@cathome"))
         self.label_4.setText(_translate("MainWindow", "Разработанно силами "))
-# Убедитесь, что вы используете setWidget правильно
-
-        print("widget_7 visible:", self.widget_7.isVisible())
-        print("tab_3 visible:", self.tab_3.isVisible())
 
 if __name__ == "__main__":
     import sys

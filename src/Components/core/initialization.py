@@ -17,12 +17,11 @@ from cryptography.hazmat.primitives import hashes, serialization
 from Components.core.json_handler import JsonHandler
 from Components.core.json_handler import json
 from pathlib import Path
-
-from sys import exit as ex
+from shutil import copy
 
 import threading 
 import sqlite3
-
+import sys
 class InitBlock(JsonHandler):
     def __init__(self):
         super().__init__()
@@ -65,7 +64,7 @@ class InitBlock(JsonHandler):
             }
             self.save_json(self.JSON_FILE_CONSTANTS, {"constants": self.data_constants})
 
-        conn = sqlite3.connect(Path(self.LOCAL_PATH, self.data_constants["db_path"]))
+        conn = sqlite3.connect(self.path(self.LOCAL_PATH, self.data_constants["db_path"]))
         cursor = conn.cursor()
         cursor.execute('''CREATE TABLE IF NOT EXISTS donates (
                             id INTEGER PRIMARY KEY, 
@@ -77,6 +76,17 @@ class InitBlock(JsonHandler):
                         )''')
         conn.commit()
         conn.close()
+        
+        if sys.platform == "win32" or sys.platform == "cygwin":
+            path_to_python = sys.executable[:-10]
+            path_to_ffmpeg = self.path(path_to_python, "ffmpeg.exe")
+            path_to_ffprobe = self.path(path_to_python, "ffprobe.exe")
+            path_to_ffplay = self.path(path_to_python, "ffplay.exe")
+            if not (path_to_ffmpeg.exists() and path_to_ffprobe.exists() and path_to_ffplay.exists()):
+                print("zalupa")
+                copy(self.path(self.LOCAL_PATH, "src", "Components", "core", "ffmpeg", "ffmpeg.exe"), path_to_ffmpeg)
+                copy(self.path(self.LOCAL_PATH, "src", "Components", "core", "ffmpeg", "ffprobe.exe"), path_to_ffprobe)
+                copy(self.path(self.LOCAL_PATH, "src", "Components", "core","ffmpeg", "ffplay.exe"), path_to_ffplay)
         
         # HTML-шаблон (widget/index.html)
         html_content = """<!DOCTYPE html>
@@ -166,8 +176,10 @@ class InitBlock(JsonHandler):
 </body>
 </html>
     """
+    
         with open(Path(self.LOCAL_PATH, "data", "widget", "index.html"), "w", encoding="utf-8") as file:
             file.write(html_content) 
+            
     def check_license(self):
         with open("src/Components/core/verify/public_key.pem", "rb") as public_key_file:
             public_key = serialization.load_pem_public_key(public_key_file.read())
@@ -198,7 +210,7 @@ class InitBlock(JsonHandler):
             )
 
         except Exception as e:
-            ex()
+            sys.exit()
             
 if __name__ == "__main__":
     obj = InitBlock()
