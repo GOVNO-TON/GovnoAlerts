@@ -188,3 +188,4 @@ cython_debug/
 *.gif
 *.mp3
 *.json
+*.db
