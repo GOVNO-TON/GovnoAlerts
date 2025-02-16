@@ -28,21 +28,27 @@
    ```
 
 3. Создайте виртуальное окружение (рекомендуется):
+    Для Windows:
     ```
+    py -3.12 -m venv venv
+    venv\Scripts\activate
+    ```
+    Для Linux/MacOS:    
+   ```
     python3.12 -m venv venv
-    source venv/bin/activate  # Для Linux/MacOS
-    venv\Scripts\activate    # Для Windows
+    source venv/bin/activate 
+
     ```
-4. Установите зависимости:
+5. Установите зависимости:
     ```
     pip install -r requirements.txt
     ```
-5. Запустите проект:
+6. Запустите проект:
 
     ```
     python src/main.py
     ```
-6. Настройте конфигурацию в настройках программы:
+7. Настройте конфигурацию в настройках программы:
 - Укажите API - ключ [TonCenter](https://t.me/toncenter);
 - Укажите кошелёк TON на который хотите получать донаты;
 - Создайте шаблоны для реакции на донаты
