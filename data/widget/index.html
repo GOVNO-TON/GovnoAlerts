@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OBS Donations</title>
+    <style>
+        @font-face {
+            font-family: 'Inter-700';
+            src: url('/fonts/Inter-700.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            text-align: center;
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        #donation-box {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 24px;
+            display: none;
+            font-family: 'Inter-600', sans-serif;
+        }
+
+        img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="donation-box"></div>
+    <audio id="sound1"></audio>
+    <audio id="sound2"></audio>
+
+    <script>
+        let lastDonationId = null;
+
+        async function fetchDonations() {
+            let response = await fetch('/get_donations');
+            let donations = await response.json();
+
+            if (donations.length === 0) return;
+
+            let lastDonation = donations[donations.length - 1];
+
+            if (lastDonationId === lastDonation.id) return;
+            lastDonationId = lastDonation.id;
+
+            let donationBox = document.getElementById('donation-box');
+            donationBox.innerHTML = `
+                <img id="donation-gif" src="${lastDonation.gif}" alt="Donation GIF"><br>
+                <strong>${lastDonation.name}</strong><br> 
+                ${lastDonation.message}
+            `;
+            donationBox.style.display = "block";
+
+            let sound1 = document.getElementById('sound1');
+            let sound2 = document.getElementById('sound2');
+
+            sound1.src = lastDonation.sound1;
+            sound2.src = lastDonation.sound2;
+
+            if (sound2.getAttribute("src") === "-") {
+                sound1.play().catch(console.error);
+            } else {
+                sound1.play().then(() => {
+                    sound1.onended = () => sound2.play();
+                }).catch(console.error);
+            }
+
+            setTimeout(() => {
+                donationBox.style.display = "none";
+            }, lastDonation.duration);
+        }
+
+        setInterval(fetchDonations, 3000);
+    </script>
+</body>
+</html>
+    
