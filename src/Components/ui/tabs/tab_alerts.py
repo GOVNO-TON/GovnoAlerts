@@ -15,6 +15,7 @@
 from PyQt5 import QtWidgets
 from PyQt5.QtWidgets import QMessageBox
 from PyQt5.QtCore import Qt
+from Components.core.wallet import Wallet
 
 import os
 import shutil
@@ -61,6 +62,7 @@ class AlertsTab:
                 del self.data[template_name]
                 self.save_json(self.JSON_FILE_TEMPLATES, {"templates": self.data})
                 self.update_list_widget()
+                self.obs_wallet = Wallet(self.data_wallet["wallet_raw"], self.data_constants["jetton_master"], self.data_wallet["api_key"], self.data_constants["api_url"], db_path=self.path(self.LOCAL_PATH, self.data_constants["db_path"]), update_ui=self.update_table_view)
                 self.ui.alert_settings_canvas.setVisible(False)
             else:
                 QMessageBox.warning(self, "Ошибка", "Выберите шаблон для удаления!")
@@ -85,7 +87,7 @@ class AlertsTab:
             self.ui.allert_sound_path_textbox.setPlainText(str(template_data["PATH"]["audio_path"]))
 
             self.ui.checkBox.setChecked(template_data.get("enabled", False))
-
+            
         else:
             self.ui.alert_settings_canvas.setVisible(False)
 
@@ -128,6 +130,7 @@ class AlertsTab:
             selected_item.setText(self.ui.name_shema_textbox.toPlainText())
             self.save_json(self.JSON_FILE_TEMPLATES, {"templates": self.data})
             self.update_template_style(selected_item)
+            self.obs_wallet = Wallet(self.data_wallet["wallet_raw"], self.data_constants["jetton_master"], self.data_wallet["api_key"], self.data_constants["api_url"], db_path=self.path(self.LOCAL_PATH, self.data_constants["db_path"]), update_ui=self.update_table_view)
             QMessageBox.information(self, "Сохранено", "Настройки обновлены!")
 
     def copy_file(self, file_path, destination_folder, template_name):

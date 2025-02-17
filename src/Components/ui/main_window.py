@@ -94,7 +94,8 @@ class MainApp(QtWidgets.QMainWindow, InitBlock, MainTab, AlertsTab, WalletTab, V
         # text alerts
         self.ui.text_duration_slider.setRange(0, 999)
         self.ui.text_duration_slider.setSingleStep(1)
-
+        self.ui.volume_alert_slider.setRange(0, 400)
+        self.ui.volume_alert_slider.setSingleStep(1)
         # alerts voice
         self.ui.volume_slider.valueChanged.connect(lambda: self.update_label(self.ui.volume_slider, self.ui.voice_volume_label))
 
@@ -112,7 +113,7 @@ class MainApp(QtWidgets.QMainWindow, InitBlock, MainTab, AlertsTab, WalletTab, V
         self.update_list_widget()
         self.update_voice_settings()
         self.update_wallet_settings()
-
+        
     def run_wallet_monitor(self):
         """Мониторинг кошелька, вызываемый таймером"""
         transactions = self.obs_wallet.get_transactions()
@@ -128,12 +129,14 @@ class MainApp(QtWidgets.QMainWindow, InitBlock, MainTab, AlertsTab, WalletTab, V
         if file_path:
             plain_text_edit.setPlainText(file_path)
 
-    def update_label(self, slider, label, flag=False, float=False, double_spin=False):
+    def update_label(self, slider, label, flag=False, float=False):
         """Обновляет значение в QLabel при изменении ползунка."""
+        print("залупа", label.objectName(), slider.value())
         if flag:
             label.setValue(int(slider.value() / 100))
         else:
             label.setValue(int(slider.value()))
+            print(label.objectName(), slider.value())
         
         if float:
             label.setValue(slider.value() * 100)
