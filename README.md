@@ -68,6 +68,7 @@
 - Нажмите кнопку "Обновить кэш текущей страницы"(Кнопку нужно нажимать каждый раз при повторном запуске OBS и открытой программе)
 
 # Авторы
+## Автор идеи v32ode - [Telegram_link](https://t.me/v32ode)
 ## [Github:Oppj4](https://github.com/oppj4).............[Telegram_link](https://t.me/LanArch1)
 ## [Github:cathome1](https://github.com/cathome1)......[Telegram_link](https://t.me/cathome)
 
