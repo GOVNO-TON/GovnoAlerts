@@ -92,7 +92,7 @@ sudo apt install portaudio19-dev
 ## Поддержать разработчиков
 TON:
 
-UQBn0pRJvGJHOio-sIIc-Txkj1AJjpOfOI7fGzvo2DmBglVd
+**UQBn0pRJvGJHOio-sIIc-Txkj1AJjpOfOI7fGzvo2DmBglVd**
 
 # Лицензия
 Этот проект распространяется под лицензией Apache 2.0. Подробнее см. в файле [LICENSE](LICENSE).
