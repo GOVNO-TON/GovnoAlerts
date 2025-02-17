@@ -13,16 +13,22 @@
 
 ## Установка
 0. Для MacOS и Linux может потребоваться PortAudio
-    ``` macos
-    brew install portaudio
-    ```
-    ```linux
-    sudo apt install portaudio19-dev
-    ```
+
+MacOS:
+
+``` 
+brew install portaudio
+```
+
+Ubuntu Linux:
+
+```
+sudo apt install portaudio19-dev
+```
 
 Чтобы начать использовать GovnoAlerts, выполните следующие шаги:
 
->### UPDATE:
+>### <font color="gree">UPDATE</font>
 >Для Windows и MacOS были выпущены скрипты автоматической установки и запуска: start.bat и start.command соответственно.
 >
 >С помощью них можно запускать программу. Первичный запуск скрипта автоматически выполнит установку, а последующие запуски будут открывать программу(не переустанавливать).
