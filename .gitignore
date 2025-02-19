@@ -189,3 +189,4 @@ cython_debug/
 *.mp3
 *.json
 *.db
+*.ui
