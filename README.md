@@ -98,3 +98,50 @@ TON:
 Этот проект распространяется под лицензией Apache 2.0. Подробнее см. в файле [LICENSE](LICENSE).
 
 © Copyright 2025 oppj4, cathome1, GOVNO-TON
+
+## Лицензии сторонних библиотек
+
+Этот проект использует следующие сторонние библиотеки, каждая из которых распространяется под своей лицензией:
+
+### Библиотеки и их лицензии
+
+- **blinker** — [MIT License](LICENSES/MIT_LICENSE.txt)
+- **certifi** — [MPL-2.0 License](LICENSES/MPL_LICENSE.txt)
+- **cffi** — [MIT License](LICENSES/MIT_LICENSE.txt)
+- **charset-normalizer** — [MIT License](LICENSES/MIT_LICENSE.txt)
+- **click** — [BSD-3-Clause License](LICENSES/BSD_LICENSE.txt)
+- **colorama** — [BSD-3-Clause License](LICENSES/BSD_LICENSE.txt)
+- **configparser** — [MIT License](LICENSES/MIT_LICENSE.txt)
+- **cryptography** — [Apache-2.0 License](LICENSES/APACHE_LICENSE.txt)
+- **Flask** — [BSD-3-Clause License](LICENSES/BSD_LICENSE.txt)
+- **gTTS** — [MIT License](LICENSES/MIT_LICENSE.txt)
+- **idna** — [BSD-3-Clause License](LICENSES/BSD_LICENSE.txt)
+- **itsdangerous** — [BSD-3-Clause License](LICENSES/BSD_LICENSE.txt)
+- **Jinja2** — [BSD-3-Clause License](LICENSES/BSD_LICENSE.txt)
+- **MarkupSafe** — [BSD-3-Clause License](LICENSES/BSD_LICENSE.txt)
+- **pillow** — [HPND License](LICENSES/HPND_LICENSE.txt)
+- **PyAudio** — [MIT License](LICENSES/MIT_LICENSE.txt)
+- **pycparser** — [BSD-3-Clause License](LICENSES/BSD_LICENSE.txt)
+- **pydub** — [MIT License](LICENSES/MIT_LICENSE.txt)
+- **PySide6** — [LGPL-3.0-only License](LICENSES/LGPL_LICENSE.txt)
+- **PySide6_Addons** — [LGPL-3.0-only License](LICENSES/LGPL_LICENSE.txt)
+- **PySide6_Essentials** — [LGPL-3.0-only License](LICENSES/LGPL_LICENSE.txt)
+- **requests** — [Apache-2.0 License](LICENSES/APACHE_LICENSE.txt)
+- **shiboken6** — [LGPL-3.0-only License](LICENSES/LGPL_LICENSE.txt)
+- **urllib3** — [MIT License](LICENSES/MIT_LICENSE.txt)
+- **Werkzeug** — [BSD-3-Clause License](LICENSES/BSD_LICENSE.txt)
+
+### Файлы лицензий
+
+Все лицензионные файлы находятся в папке `LICENSES`. Вы можете ознакомиться с полными текстами лицензий по следующим ссылкам:
+
+- [MIT License](LICENSES/MIT_LICENSE.txt)
+- [BSD-3-Clause License](LICENSES/BSD_LICENSE.txt)
+- [Apache-2.0 License](LICENSES/APACHE_LICENSE.txt)
+- [LGPL-3.0-only License](LICENSES/LGPL_LICENSE.txt)
+- [MPL-2.0 License](LICENSES/MPL_LICENSE.txt)
+- [HPND License](LICENSES/HPND_LICENSE.txt)
+
+### Уведомление об авторских правах
+
+Информация об авторах и правообладателях сторонних библиотек находится в файле [NOTICE](NOTICE).
