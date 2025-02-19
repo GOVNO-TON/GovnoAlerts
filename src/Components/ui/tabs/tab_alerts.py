@@ -12,9 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from PyQt5 import QtWidgets
-from PyQt5.QtWidgets import QMessageBox
-from PyQt5.QtCore import Qt
+from PySide6 import QtWidgets
+from PySide6.QtWidgets import QMessageBox
+from PySide6.QtCore import Qt
 from Components.core.wallet import Wallet
 
 import os

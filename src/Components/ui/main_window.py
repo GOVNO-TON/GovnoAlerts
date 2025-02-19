@@ -15,11 +15,15 @@
 import sys
 import os
 
-from PyQt5 import QtWidgets
-from PyQt5.QtWidgets import QFileDialog, QMessageBox
-from PyQt5.QtCore import QUrl, Qt, QTimer
-from PyQt5.QtGui import QDesktopServices, QActionEvent
-from Components.ui.settings import Ui_MainWindow
+from PySide6 import QtWidgets
+from PySide6.QtWidgets import QFileDialog, QMessageBox
+from PySide6.QtCore import QUrl, Qt, QTimer
+from PySide6.QtGui import QDesktopServices
+
+if os.name == "nt": 
+    from Components.ui.settings_windows import Ui_MainWindow
+else: 
+    from Components.ui.settings_mac import Ui_MainWindow
 
 from Components.ui.tabs.tab_main import MainTab
 from Components.ui.tabs.tab_voice import VoiceTab
@@ -40,10 +44,6 @@ class MainApp(QtWidgets.QMainWindow, InitBlock, MainTab, AlertsTab, WalletTab, V
         header = self.ui.donate_table.horizontalHeader()
         header.setSectionResizeMode(QtWidgets.QHeaderView.Fixed)  # Фиксированный размер столбцов
 
-        # Устанавливаем ширину для каждого столбца
-        self.ui.donate_table.setColumnWidth(0, 1000)  # Ширина первого столбца
-        self.ui.donate_table.setColumnWidth(1, 150)  # Ширина второго столбца
-        self.ui.donate_table.setColumnWidth(2, 200)  # Ширина третьего столбца
         self.obs_wallet = Wallet(self.data_wallet["wallet_raw"], self.data_constants["jetton_master"], self.data_wallet["api_key"], self.data_constants["api_url"], db_path=self.path(self.LOCAL_PATH, self.data_constants["db_path"]), update_ui=self.update_table_view)
 
         # Старт/стоп кнопки

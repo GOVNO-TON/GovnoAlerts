@@ -12,10 +12,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from PyQt5.QtCore import QThread, QTimer
-from PyQt5.QtWidgets import QApplication, QHeaderView
-from PyQt5.QtCore import Qt
-from PyQt5.QtSql import QSqlDatabase, QSqlTableModel, QSqlQuery
+from PySide6.QtCore import QThread, QTimer
+from PySide6.QtWidgets import QApplication, QHeaderView
+from PySide6.QtCore import Qt
+from PySide6.QtSql import QSqlDatabase, QSqlTableModel, QSqlQuery
 
 
 import time
@@ -108,6 +108,6 @@ class MainTab():
 
         # Устанавливаем ширину для каждого столбца
         self.ui.donate_table.setColumnWidth(0, 103)  # Ширина первого столбца
-        self.ui.donate_table.setColumnWidth(1, 200)  # Ширина второго столбца
+        self.ui.donate_table.setColumnWidth(1, 183)  # Ширина второго столбца
         self.ui.donate_table.setColumnWidth(2, 100)  # Ширина третьего столбца
         self.ui.donate_table.setColumnWidth(3, 120)  # Ширина четвёртого столбца

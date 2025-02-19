@@ -13,7 +13,7 @@
 # limitations under the License.
 
 from Components.ui.main_window import MainApp
-from PyQt5 import QtWidgets
+from PySide6 import QtWidgets 
 from Components.core.stream_alert import Server
 from Components.core.initialization import InitBlock
 
