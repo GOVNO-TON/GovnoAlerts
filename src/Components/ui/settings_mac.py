@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'settings.ui'
+## Form generated from reading UI file 'settings_mac.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.8.2
 ##
@@ -96,7 +96,6 @@ class Ui_MainWindow(object):
         self.gridLayout_7.setObjectName(u"gridLayout_7")
         self.donate_table = QTableView(self.donate_table_widget)
         self.donate_table.setObjectName(u"donate_table")
-        self.donate_table.setMaximumSize(QSize(500000, 500000))
         font4 = QFont()
         font4.setPointSize(10)
         font4.setBold(False)
@@ -448,7 +447,8 @@ class Ui_MainWindow(object):
         self.widget_3.setGeometry(QRect(19, 29, 791, 481))
         self.widget_4 = QWidget(self.widget_3)
         self.widget_4.setObjectName(u"widget_4")
-        self.widget_4.setGeometry(QRect(30, 10, 371, 145))
+        self.widget_4.setGeometry(QRect(30, 10, 371, 150))
+        self.widget_4.setFont(font1)
         self.verticalLayout_4 = QVBoxLayout(self.widget_4)
         self.verticalLayout_4.setObjectName(u"verticalLayout_4")
         self.wallet_api_key_label = QLabel(self.widget_4)
@@ -486,6 +486,7 @@ class Ui_MainWindow(object):
         self.widget_5 = QWidget(self.widget_3)
         self.widget_5.setObjectName(u"widget_5")
         self.widget_5.setGeometry(QRect(30, 150, 371, 105))
+        self.widget_5.setFont(font1)
         self.verticalLayout_5 = QVBoxLayout(self.widget_5)
         self.verticalLayout_5.setObjectName(u"verticalLayout_5")
         self.wallet_addr_label = QLabel(self.widget_5)
@@ -666,10 +667,10 @@ class Ui_MainWindow(object):
         self.volume_alert_label.setText(QCoreApplication.translate("MainWindow", u"\u0413\u0440\u043e\u043c\u043a\u043e\u0441\u0442\u044c \u0443\u0432\u0435\u0434\u043e\u043c\u043b\u0435\u043d\u0438\u044f", None))
         self.label_3.setText(QCoreApplication.translate("MainWindow", u"\u041c\u0438\u043d\u0438\u043c\u0430\u043b\u044c\u043d\u0430\u044f \u0446\u0435\u043d\u0430 \u0441\u0440\u0430\u0431\u0430\u0442\u044b\u0432\u0430\u043d\u0438\u044f", None))
         self.alert_gif_path.setText(QCoreApplication.translate("MainWindow", u"\u041f\u0443\u0442\u044c \u043a \u0433\u0438\u0444", None))
-        self.alert_gif_textbox.setPlainText(QCoreApplication.translate("MainWindow", u"ewsfewascfdawfaqedvdvcdsvcdvdvadevdadvaedfvdevdevc", None))
+        self.alert_gif_textbox.setPlainText(QCoreApplication.translate("MainWindow", u"ewsfewascfdawfaqedvdvcdsvcdvdvadevdadvaedfvdevdevcdfdsdscscv", None))
         self.search_file_gif_btn.setText(QCoreApplication.translate("MainWindow", u"\u041e\u0431\u0437\u043e\u0440", None))
         self.allert_sound_path_label.setText(QCoreApplication.translate("MainWindow", u"\u041f\u0443\u0442\u044c \u043a \u0430\u0443\u0434\u0438\u043e", None))
-        self.allert_sound_path_textbox.setPlainText(QCoreApplication.translate("MainWindow", u"erghjmnhgfredertjykijhgfdsdfrhjkjhgfdsderfgverdfgvefgvea", None))
+        self.allert_sound_path_textbox.setPlainText(QCoreApplication.translate("MainWindow", u"scscscxerghjmnhgfredertjykijhgfdsdfrhjkjhgfdsderfgverdfgvefgvea", None))
         self.search_path_audio_btn.setText(QCoreApplication.translate("MainWindow", u"\u041e\u0431\u0437\u043e\u0440", None))
         self.save_shema_button.setText(QCoreApplication.translate("MainWindow", u"\u0421\u043e\u0445\u0440\u0430\u043d\u0438\u0442\u044c \u0448\u0430\u0431\u043b\u043e\u043d", None))
         self.checkBox.setText(QCoreApplication.translate("MainWindow", u"\u0412\u043a\u043b/\u0412\u044b\u043a\u043b", None))
@@ -682,7 +683,7 @@ class Ui_MainWindow(object):
 "li.unchecked::marker { content: \"\\2610\"; }\n"
 "li.checked::marker { content: \"\\2612\"; }\n"
 "</style></head><body style=\" font-family:'.AppleSystemUIFont'; font-size:10pt; font-weight:700; font-style:normal;\">\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;\"><br /></p></body></html>", None))
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">dsfvdsvfdzvdvdvdvvdzvdzxvzdvdfddddffsdefaefefefwrfqwefq</span></p></body></html>", None))
         self.wallet_api_key_button.setText(QCoreApplication.translate("MainWindow", u"\u0421\u043e\u0445\u0440\u0430\u043d\u0438\u0442\u044c", None))
         self.wallet_faq_label.setText(QCoreApplication.translate("MainWindow", u"\u0413\u0434\u0435 \u043f\u043e\u043b\u0443\u0447\u0438\u0442\u044c \u0442\u043e\u043a\u0435\u043d?", None))
         self.wallet_addr_label.setText(QCoreApplication.translate("MainWindow", u"\u0410\u0434\u0440\u0435\u0441 \u043a\u043e\u0448\u0435\u043b\u044c\u043a\u0430", None))
@@ -693,7 +694,7 @@ class Ui_MainWindow(object):
 "li.unchecked::marker { content: \"\\2610\"; }\n"
 "li.checked::marker { content: \"\\2612\"; }\n"
 "</style></head><body style=\" font-family:'.AppleSystemUIFont'; font-size:11pt; font-weight:700; font-style:normal;\">\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;\"><br /></p></body></html>", None))
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">jkjhgfdssdfghjhgfdsdfghgfdsdfghjhgfdsjkjhgfdsdfghjhgfdsdfghgfdssdfg</span></p></body></html>", None))
         self.wallet_addr_button.setText(QCoreApplication.translate("MainWindow", u"\u0421\u043e\u0445\u0440\u0430\u043d\u0438\u0442\u044c", None))
         self.donate_qr.setText("")
         self.donate_desig_faq_label.setText(QCoreApplication.translate("MainWindow", u"\u041f\u043e\u0434\u0434\u0435\u0440\u0436\u0430\u0442\u044c \u0440\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u0447\u0438\u043a\u0430", None))
