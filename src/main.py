@@ -28,7 +28,7 @@ class Main(InitBlock):
         app = QtWidgets.QApplication(sys.argv)
         main_window = MainApp()
         main_window.show()
-        sys.exit(app.exec_())
+        sys.exit(app.exec())
         
 
 # Запуск приложения

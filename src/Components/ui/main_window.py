@@ -131,12 +131,10 @@ class MainApp(QtWidgets.QMainWindow, InitBlock, MainTab, AlertsTab, WalletTab, V
 
     def update_label(self, slider, label, flag=False, float=False):
         """Обновляет значение в QLabel при изменении ползунка."""
-        print("залупа", label.objectName(), slider.value())
         if flag:
             label.setValue(int(slider.value() / 100))
         else:
             label.setValue(int(slider.value()))
-            print(label.objectName(), slider.value())
         
         if float:
             label.setValue(slider.value() * 100)
@@ -209,4 +207,4 @@ if __name__ == "__main__":
     app = QtWidgets.QApplication(sys.argv)
     main_window = MainApp()
     main_window.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())
