@@ -30,7 +30,6 @@ from Components.ui.tabs.tab_voice import VoiceTab
 from Components.ui.tabs.tab_alerts import AlertsTab
 from Components.ui.tabs.tab_wallet import WalletTab
 from Components.core.initialization import InitBlock
-
 from Components.core.wallet import Wallet
 
 class MainApp(QtWidgets.QMainWindow, InitBlock, MainTab, AlertsTab, WalletTab, VoiceTab):

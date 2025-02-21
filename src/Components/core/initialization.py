@@ -12,6 +12,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+import threading 
+import sqlite3
+import sys
+
 from cryptography.hazmat.primitives.asymmetric import padding
 from cryptography.hazmat.primitives import hashes, serialization
 from Components.core.json_handler import JsonHandler
@@ -19,9 +23,6 @@ from Components.core.json_handler import json
 from pathlib import Path
 from shutil import copy
 
-import threading 
-import sqlite3
-import sys
 class InitBlock(JsonHandler):
     def __init__(self):
         super().__init__()
@@ -76,16 +77,6 @@ class InitBlock(JsonHandler):
                         )''')
         conn.commit()
         conn.close()
-        
-        if sys.platform == "win32" or sys.platform == "cygwin":
-            path_to_python = sys.executable[:-10]
-            path_to_ffmpeg = self.path(path_to_python, "ffmpeg.exe")
-            path_to_ffprobe = self.path(path_to_python, "ffprobe.exe")
-            path_to_ffplay = self.path(path_to_python, "ffplay.exe")
-            if not (path_to_ffmpeg.exists() and path_to_ffprobe.exists() and path_to_ffplay.exists()):
-                copy(self.path(self.LOCAL_PATH, "src", "Components", "core", "ffmpeg", "ffmpeg.exe"), path_to_ffmpeg)
-                copy(self.path(self.LOCAL_PATH, "src", "Components", "core", "ffmpeg", "ffprobe.exe"), path_to_ffprobe)
-                copy(self.path(self.LOCAL_PATH, "src", "Components", "core","ffmpeg", "ffplay.exe"), path_to_ffplay)
         
         # HTML-шаблон (widget/index.html)
         html_content = """<!DOCTYPE html>

@@ -12,12 +12,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from Components.ui.main_window import MainApp
+import sys
+
 from PySide6 import QtWidgets 
+from Components.ui.main_window import MainApp
 from Components.core.stream_alert import Server
 from Components.core.initialization import InitBlock
-
-import sys
 
 class Main(InitBlock):
     def __init__(self):

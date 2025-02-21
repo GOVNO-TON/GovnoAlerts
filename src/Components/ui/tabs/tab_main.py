@@ -12,13 +12,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+import time
+
 from PySide6.QtCore import QThread, QTimer
 from PySide6.QtWidgets import QApplication, QHeaderView
 from PySide6.QtCore import Qt
 from PySide6.QtSql import QSqlDatabase, QSqlTableModel, QSqlQuery
-
-
-import time
 
 class Worker(QThread):
     def __init__(self, wallet):

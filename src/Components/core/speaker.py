@@ -12,10 +12,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from gtts import gTTS
 import os
-from pydub import AudioSegment
 import pyaudio
+
+from gtts import gTTS
+from pydub import AudioSegment
 from math import log10
 
 class Speaker:
