@@ -111,15 +111,14 @@ TON:
 - **charset-normalizer** — [MIT License](LICENSES/MIT_LICENSE.txt)
 - **click** — [BSD-3-Clause License](LICENSES/BSD_LICENSE.txt)
 - **colorama** — [BSD-3-Clause License](LICENSES/BSD_LICENSE.txt)
-- **configparser** — [MIT License](LICENSES/MIT_LICENSE.txt)
 - **cryptography** — [Apache-2.0 License](LICENSES/APACHE_LICENSE.txt)
 - **Flask** — [BSD-3-Clause License](LICENSES/BSD_LICENSE.txt)
+- **FFmpeg** — [LGPL-3.0-only License](LICENSES/LGPL_LICENSE.txt)
 - **gTTS** — [MIT License](LICENSES/MIT_LICENSE.txt)
 - **idna** — [BSD-3-Clause License](LICENSES/BSD_LICENSE.txt)
 - **itsdangerous** — [BSD-3-Clause License](LICENSES/BSD_LICENSE.txt)
 - **Jinja2** — [BSD-3-Clause License](LICENSES/BSD_LICENSE.txt)
 - **MarkupSafe** — [BSD-3-Clause License](LICENSES/BSD_LICENSE.txt)
-- **pillow** — [HPND License](LICENSES/HPND_LICENSE.txt)
 - **PyAudio** — [MIT License](LICENSES/MIT_LICENSE.txt)
 - **pycparser** — [BSD-3-Clause License](LICENSES/BSD_LICENSE.txt)
 - **pydub** — [MIT License](LICENSES/MIT_LICENSE.txt)
@@ -140,7 +139,6 @@ TON:
 - [Apache-2.0 License](LICENSES/APACHE_LICENSE.txt)
 - [LGPL-3.0-only License](LICENSES/LGPL_LICENSE.txt)
 - [MPL-2.0 License](LICENSES/MPL_LICENSE.txt)
-- [HPND License](LICENSES/HPND_LICENSE.txt)
 
 ### Уведомление об авторских правах
 

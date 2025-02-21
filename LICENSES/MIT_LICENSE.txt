@@ -5,7 +5,6 @@ The following libraries are licensed under the MIT License:
 - blinker==1.9.0
 - cffi==1.17.1
 - charset-normalizer==3.4.1
-- configparser==7.1.0
 - gTTS==2.5.4
 - PyAudio==0.2.14
 - pydub==0.25.1

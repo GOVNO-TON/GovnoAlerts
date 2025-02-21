@@ -7,6 +7,7 @@ The following libraries are licensed under the GNU Lesser General Public License
 - PySide6_Addons==6.8.2.1
 - PySide6_Essentials==6.8.2.1
 - shiboken6==6.8.2.1
+- FFmpeg
 
 For information about the authors of these libraries, please refer to the NOTICE file.
 

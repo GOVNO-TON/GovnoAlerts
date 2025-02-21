@@ -32,20 +32,20 @@ This project includes the following third-party components:
    - Repository: https://github.com/tartley/colorama
    - Copyright: Jonathan Hartley
 
-7. configparser==7.1.0
-   - License: MIT
-   - Repository: https://github.com/jaraco/configparser
-   - Copyright: Łukasz Langa
-
-8. cryptography==44.0.1
+7. cryptography==44.0.1
    - License: Apache-2.0 or BSD-3-Clause
    - Repository: https://github.com/pyca/cryptography
    - Copyright: The Python Cryptographic Authority
 
-9. Flask==3.1.0
+8. Flask==3.1.0
    - License: BSD-3-Clause
    - Repository: https://github.com/pallets/flask
    - Copyright: Pallets
+
+9. FFmpeg
+   - License: LGPL-3.0
+   - Repository: https://ffmpeg.org/
+   - Copyright: FFmpeg developers
 
 10. gTTS==2.5.4
     - License: MIT
@@ -72,61 +72,57 @@ This project includes the following third-party components:
     - Repository: https://github.com/pallets/markupsafe
     - Copyright: Pallets
 
-15. pillow==11.1.0
-    - License: HPND
-    - Repository: https://github.com/python-pillow/Pillow
-    - Copyright: Alex Clark and contributors
-
-16. PyAudio==0.2.14
+15. PyAudio==0.2.14
     - License: MIT
     - Repository: https://github.com/jleb/pyaudio
     - Copyright: Hubert Pham
 
-17. pycparser==2.22
+16. pycparser==2.22
     - License: BSD-3-Clause
     - Repository: https://github.com/eliben/pycparser
     - Copyright: Eli Bendersky
 
-18. pydub==0.25.1
+17. pydub==0.25.1
     - License: MIT
     - Repository: https://github.com/jiaaro/pydub
     - Copyright: James Robert
 
-19. PySide6==6.8.2.1
+18. PySide6==6.8.2.1
     - License: LGPL-3.0
     - Repository: https://github.com/qt/qtbase
     - Copyright: The Qt Company
 
-20. PySide6_Addons==6.8.2.1
+19. PySide6_Addons==6.8.2.1
     - License: LGPL-3.0
     - Repository: https://github.com/qt/qtbase
     - Copyright: The Qt Company
 
-21. PySide6_Essentials==6.8.2.1
+20. PySide6_Essentials==6.8.2.1
     - License: LGPL-3.0
     - Repository: https://github.com/qt/qtbase
     - Copyright: The Qt Company
 
-22. requests==2.32.3
+21. requests==2.32.3
     - License: Apache-2.0
     - Repository: https://github.com/psf/requests
     - Copyright: Kenneth Reitz
 
-23. shiboken6==6.8.2.1
+22. shiboken6==6.8.2.1
     - License: LGPL-3.0
     - Repository: https://github.com/qt/qtbase
     - Copyright: The Qt Company
 
-24. urllib3==2.3.0
+23. urllib3==2.3.0
     - License: MIT
     - Repository: https://github.com/urllib3/urllib3
     - Copyright: Andrey Petrov
 
-25. Werkzeug==3.1.3
+24. Werkzeug==3.1.3
     - License: BSD-3-Clause
     - Repository: https://github.com/pallets/werkzeug
     - Copyright: Pallets
 
 This project is licensed under the Apache License, Version 2.0.
 
-Copyright (c) 2025 oppj4, cathome1, GOVNO-TON . All rights reserved.
+Copyright (c) 2025 oppj4, cathome1, GOVNO-TON. All rights reserved.
+
