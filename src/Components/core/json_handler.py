@@ -22,6 +22,7 @@ class JsonHandler:
         self.JSON_FILE_SOUND = str(Path(self.LOCAL_PATH, "config", "text_alerts_settings.json"))
         self.JSON_FILE_WALLET = str(Path(self.LOCAL_PATH, "config", "wallet_settings.json"))
         self.JSON_FILE_CONSTANTS = str(Path(self.LOCAL_PATH, "config", "constant_values.json"))
+        self.JSON_FILE_FILTER = str(Path(self.LOCAL_PATH, "config", "blacklist.json"))
 
     def load_json(self, f_name, template):
         """Загружает JSON-файл с настройками."""

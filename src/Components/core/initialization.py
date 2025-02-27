@@ -33,6 +33,7 @@ class InitBlock(JsonHandler):
         self.data_sound = self.load_json(self.JSON_FILE_SOUND, {"settings": {}})["settings"]
         self.data_wallet = self.load_json(self.JSON_FILE_WALLET, {"wallet_settings": {}})["wallet_settings"]
         self.data_constants = self.load_json(self.JSON_FILE_CONSTANTS, {"constants": {}})["constants"]
+        self.data_filter = self.load_json(self.JSON_FILE_FILTER, {"filter_settings":{}})["filter_settings"]
 
         if not self.data_wallet:
             self.data_wallet = {
@@ -65,6 +66,13 @@ class InitBlock(JsonHandler):
             }
             self.save_json(self.JSON_FILE_CONSTANTS, {"constants": self.data_constants})
 
+        if not self.data_filter:
+            self.data_filter = {
+                "url_filter": "approved",
+                "BAD_WORDS": []
+            }
+            self.save_json(self.JSON_FILE_FILTER, {"filter_settings": self.data_filter})
+        
         conn = sqlite3.connect(self.path(self.LOCAL_PATH, self.data_constants["db_path"]))
         cursor = conn.cursor()
         cursor.execute('''CREATE TABLE IF NOT EXISTS donates (
