@@ -22,6 +22,7 @@ from time import sleep
 from datetime import datetime
 from Components.core.speaker import Speaker
 from Components.core.initialization import InitBlock
+from Components.core.filter import Filter
 
 class Wallet(InitBlock):
     
@@ -170,19 +171,20 @@ class Wallet(InitBlock):
                         alert_settings = self.data[template_type]["ALERT_SETTINGS"]
                         alert_paths = self.data[template_type]["PATH"]                        
                         cutted_msg = tx['message'][:int(self.data_sound["len_msg"])]
+                        filtered_msg = Filter(self.data_filter["BAD_WORDS"], cutted_msg, self.data_filter["url_filter"]).full_filtration()
                         
                         data = {
                             "name": donater,
-                            "message": cutted_msg,
+                            "message": filtered_msg,
                             "sound1": alert_paths["audio_path"],
                             # "sound2": "output.mp3", # Сделать обрааботку если донат без войса
                             "gif": alert_paths["gif_path"],
                             "duration": int(alert_settings["duration"]) * 1000
                         }
-                        if cutted_msg:
+                        if filtered_msg.replace('*', ''):
                             voice_alarm = Speaker(lang=self.data_sound["lang"], scale=self.data_sound["scale"], audio_path=Path(self.LOCAL_PATH, self.data_constants["voice_path"]), pitch=self.data_sound["pitch"])
-                            voice_duration = voice_alarm.audio_create_and_transform(text=cutted_msg, file_path=Path(self.LOCAL_PATH, self.data_constants["voice_path"]))
-                            data["sound2"] = f"{self.data_constants["voice_path"].split('/')[-1][:-4]}_fixed.mp3" #Я покакала
+                            voice_duration = voice_alarm.audio_create_and_transform(text=filtered_msg.replace('*', ''), file_path=Path(self.LOCAL_PATH, self.data_constants["voice_path"]))
+                            data["sound2"] = f"{self.data_constants["voice_path"].split('/')[-1][:-4]}_fixed.mp3" 
                             
                         else:
                             voice_duration = False
