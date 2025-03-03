@@ -209,7 +209,3 @@ class InitBlock(JsonHandler):
 
         except Exception as e:
             sys.exit()
-            
-if __name__ == "__main__":
-    obj = InitBlock()
-    pass
