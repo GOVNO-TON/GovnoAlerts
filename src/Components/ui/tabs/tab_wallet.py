@@ -17,8 +17,13 @@ from Components.core.wallet import Wallet
 
 class WalletTab:
     def __init__(self):
-        pass
+        super().__init__()
 
+    def setup_wallet_tab(self):
+        self.make_label_clickable(self.ui.wallet_faq_label, "https://t.me/toncenter")
+        self.ui.wallet_api_key_button.clicked.connect(self.save_wallet_api_key)
+        self.ui.wallet_addr_button.clicked.connect(self.save_wallet_raw_adr)
+    
     def save_wallet_api_key(self):
         text = str(self.ui.wallet_api_key_textbox.toPlainText())
         if text != "":

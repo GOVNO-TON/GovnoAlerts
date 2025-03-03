@@ -23,6 +23,24 @@ from Components.core.wallet import Wallet
 class AlertsTab:
     def __init__(self):
         pass
+    def setup_alerts_tab(self):
+        self.ui.alert_settings_canvas.setVisible(False)
+        self.ui.shema_add_button.clicked.connect(self.add_template)
+        self.ui.shema_del_button.clicked.connect(self.remove_template)
+        self.ui.save_shema_button.clicked.connect(self.save_template)
+
+        self.ui.shema_listbox.itemClicked.connect(self.load_template)
+        self.ui.search_file_gif_btn.clicked.connect(lambda: self.select_file(self.ui.alert_gif_textbox, "GIF файлы (*.gif)"))
+        self.ui.search_path_audio_btn.clicked.connect(lambda: self.select_file(self.ui.allert_sound_path_textbox, "MP3 файлы (*.mp3)"))
+        self.ui.text_duration_slider.setRange(0, 999)
+        self.ui.text_duration_slider.setSingleStep(1)
+        self.ui.volume_alert_slider.setRange(0, 400)
+        self.ui.volume_alert_slider.setSingleStep(1)
+        self.ui.text_duration_slider.valueChanged.connect(lambda: self.update_label(self.ui.text_duration_slider, self.ui.text_duration_label_2))
+        self.ui.volume_alert_slider.valueChanged.connect(lambda: self.update_label(self.ui.volume_alert_slider, self.ui.volume_allert_counter_label))
+        self.ui.text_duration_label_2.valueChanged.connect(self.ui.text_duration_slider.setValue)
+        self.ui.volume_allert_counter_label.valueChanged.connect(self.ui.volume_alert_slider.setValue)  
+
     def add_template(self):
         """Добавляет новый шаблон."""
         text, ok = QtWidgets.QInputDialog.getText(self, "Добавить шаблон", "Введите название:")
@@ -191,7 +209,6 @@ class AlertsTab:
 
         template_name = selected_item.text()
         is_enabled = self.data[template_name]["enabled"]
-        # is_enabled = self.ui.checkBox.isChecked()  # Получаем состояние чекбокса
 
         if is_enabled:
             # Делаем текст зелёным и добавляем иконку "включено"

@@ -18,7 +18,19 @@ from Components.core.speaker import Speaker
 class VoiceTab():
     def __init__(self):
         pass
-
+    def setup_voice_tab(self):
+        self.ui.change_lang_comboBox.setItemData(0, "ru")
+        self.ui.change_lang_comboBox.setItemData(1, "en")
+        self.ui.volume_slider.valueChanged.connect(lambda: self.update_label(self.ui.volume_slider, self.ui.voice_volume_label))
+        self.ui.voice_volume_label.valueChanged.connect(self.ui.volume_slider.setValue)
+        self.factor = 100
+        self.ui.speed_slider.setMaximum(200)
+        self.ui.speed_slider.valueChanged.connect(self.update_spinbox)
+        self.ui.speed_slider.valueChanged.connect(self.update_spinbox)
+        self.ui.voice_speed_label.valueChanged.connect(self.update_slider)
+        self.ui.save_voice_settings_btn.clicked.connect(self.save_text_alerts)
+        self.ui.test_msg_textbox_button.clicked.connect(self.play_test)
+    
     def save_text_alerts(self):
         self.data_sound["pitch"] = str(self.ui.voice_speed_label.value())
         self.data_sound["scale"] = str(self.ui.volume_slider.value())

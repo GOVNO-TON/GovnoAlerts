@@ -14,6 +14,7 @@
 
 import time
 
+from PySide6 import QtWidgets
 from PySide6.QtCore import QThread, QTimer
 from PySide6.QtWidgets import QApplication, QHeaderView
 from PySide6.QtCore import Qt
@@ -45,7 +46,19 @@ class MainTab():
         self.timer_monitor = QTimer()  # Создаём таймер
         self.timer_monitor.timeout.connect(self.run_wallet_monitor)
         self.worker = None
-        
+
+    def setup_tab_main(self):
+        self.update_tab_main()
+        self.is_running = False
+        self.ui.Start_btn.clicked.connect(self.toggle)
+        self.timer = QTimer(self) 
+        self.timer.timeout.connect(self.enable_button)
+        header = self.ui.donate_table.horizontalHeader()
+        header.setSectionResizeMode(QtWidgets.QHeaderView.Fixed)
+          
+        self.copy_to_clickboard(self.ui.server_ip_label)
+        self.copy_to_clickboard(self.ui.copy_ip_btn, text=self.ui.server_ip_label.text())
+
     def toggle(self):
         """Переключение состояния кнопки (Старт/Стоп)"""
         self.is_running = not self.is_running  # Переключаем флаг
