@@ -55,11 +55,7 @@ class Ui_MainWindow(object):
         self.Start_btn = QPushButton(self.tab_1)
         self.Start_btn.setObjectName(u"Start_btn")
         self.Start_btn.setGeometry(QRect(560, 510, 261, 51))
-        font2 = QFont()
-        font2.setPointSize(12)
-        font2.setBold(True)
-        font2.setKerning(False)
-        self.Start_btn.setFont(font2)
+        self.Start_btn.setFont(font1)
         self.server_connect_widget = QWidget(self.tab_1)
         self.server_connect_widget.setObjectName(u"server_connect_widget")
         self.server_connect_widget.setGeometry(QRect(580, 10, 241, 71))
@@ -67,11 +63,11 @@ class Ui_MainWindow(object):
         self.gridLayout_6.setObjectName(u"gridLayout_6")
         self.server_ip_label = QLabel(self.server_connect_widget)
         self.server_ip_label.setObjectName(u"server_ip_label")
-        font3 = QFont()
-        font3.setPointSize(12)
-        font3.setBold(False)
-        font3.setKerning(False)
-        self.server_ip_label.setFont(font3)
+        font2 = QFont()
+        font2.setPointSize(12)
+        font2.setBold(False)
+        font2.setKerning(False)
+        self.server_ip_label.setFont(font2)
         self.server_ip_label.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
 
         self.gridLayout_6.addWidget(self.server_ip_label, 2, 1, 1, 1)
@@ -96,11 +92,11 @@ class Ui_MainWindow(object):
         self.gridLayout_7.setObjectName(u"gridLayout_7")
         self.donate_table = QTableView(self.donate_table_widget)
         self.donate_table.setObjectName(u"donate_table")
-        font4 = QFont()
-        font4.setPointSize(10)
-        font4.setBold(False)
-        font4.setKerning(False)
-        self.donate_table.setFont(font4)
+        font3 = QFont()
+        font3.setPointSize(10)
+        font3.setBold(False)
+        font3.setKerning(False)
+        self.donate_table.setFont(font3)
         self.donate_table.setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
         self.donate_table.setSizeAdjustPolicy(QAbstractScrollArea.AdjustToContents)
         self.donate_table.setEditTriggers(QAbstractItemView.NoEditTriggers)
@@ -114,7 +110,11 @@ class Ui_MainWindow(object):
 
         self.donate_table_label_faq = QLabel(self.donate_table_widget)
         self.donate_table_label_faq.setObjectName(u"donate_table_label_faq")
-        self.donate_table_label_faq.setFont(font2)
+        font4 = QFont()
+        font4.setPointSize(12)
+        font4.setBold(True)
+        font4.setKerning(False)
+        self.donate_table_label_faq.setFont(font4)
         self.donate_table_label_faq.setAlignment(Qt.AlignCenter)
 
         self.gridLayout_7.addWidget(self.donate_table_label_faq, 0, 0, 1, 1)
@@ -134,7 +134,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_2.setObjectName(u"verticalLayout_2")
         self.test_msg_label = QLabel(self.widget)
         self.test_msg_label.setObjectName(u"test_msg_label")
-        self.test_msg_label.setFont(font2)
+        self.test_msg_label.setFont(font4)
 
         self.verticalLayout_2.addWidget(self.test_msg_label)
 
@@ -181,7 +181,7 @@ class Ui_MainWindow(object):
 
         self.speed_label = QLabel(self.widget_2)
         self.speed_label.setObjectName(u"speed_label")
-        self.speed_label.setFont(font2)
+        self.speed_label.setFont(font4)
 
         self.gridLayout_4.addWidget(self.speed_label, 4, 0, 1, 1)
 
@@ -199,26 +199,26 @@ class Ui_MainWindow(object):
 
         self.change_lang_label = QLabel(self.widget_2)
         self.change_lang_label.setObjectName(u"change_lang_label")
-        self.change_lang_label.setFont(font2)
+        self.change_lang_label.setFont(font4)
 
         self.gridLayout_4.addWidget(self.change_lang_label, 0, 0, 1, 1)
 
         self.volume_label = QLabel(self.widget_2)
         self.volume_label.setObjectName(u"volume_label")
-        self.volume_label.setFont(font2)
+        self.volume_label.setFont(font4)
 
         self.gridLayout_4.addWidget(self.volume_label, 2, 0, 1, 1)
 
         self.voice_volume_label = QSpinBox(self.widget_2)
         self.voice_volume_label.setObjectName(u"voice_volume_label")
-        self.voice_volume_label.setFont(font2)
+        self.voice_volume_label.setFont(font4)
         self.voice_volume_label.setMaximum(400)
 
         self.gridLayout_4.addWidget(self.voice_volume_label, 3, 1, 1, 1)
 
         self.voice_speed_label = QDoubleSpinBox(self.widget_2)
         self.voice_speed_label.setObjectName(u"voice_speed_label")
-        self.voice_speed_label.setFont(font2)
+        self.voice_speed_label.setFont(font4)
         self.voice_speed_label.setInputMethodHints(Qt.ImhFormattedNumbersOnly)
         self.voice_speed_label.setMaximum(2.000000000000000)
 
@@ -237,7 +237,7 @@ class Ui_MainWindow(object):
         self.label = QLabel(self.widget_10)
         self.label.setObjectName(u"label")
         self.label.setEnabled(True)
-        self.label.setFont(font2)
+        self.label.setFont(font4)
         self.label.setStyleSheet(u"margin: 0, 0, 4 ,-4 ")
 
         self.gridLayout_3.addWidget(self.label, 0, 0, 1, 6)
@@ -248,7 +248,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout.setObjectName(u"horizontalLayout")
         self.len_change_spinBox = QSpinBox(self.widget_17)
         self.len_change_spinBox.setObjectName(u"len_change_spinBox")
-        self.len_change_spinBox.setFont(font2)
+        self.len_change_spinBox.setFont(font4)
         self.len_change_spinBox.setMaximum(99999)
 
         self.horizontalLayout.addWidget(self.len_change_spinBox)
@@ -278,7 +278,7 @@ class Ui_MainWindow(object):
         __qlistwidgetitem = QListWidgetItem(self.shema_listbox)
         __qlistwidgetitem.setFlags(Qt.NoItemFlags);
         self.shema_listbox.setObjectName(u"shema_listbox")
-        self.shema_listbox.setFont(font2)
+        self.shema_listbox.setFont(font4)
 
         self.formLayout.setWidget(0, QFormLayout.SpanningRole, self.shema_listbox)
 
@@ -306,7 +306,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_8.setObjectName(u"verticalLayout_8")
         self.label_20 = QLabel(self.widget_13)
         self.label_20.setObjectName(u"label_20")
-        self.label_20.setFont(font2)
+        self.label_20.setFont(font4)
 
         self.verticalLayout_8.addWidget(self.label_20)
 
@@ -327,7 +327,7 @@ class Ui_MainWindow(object):
         self.text_duration_label = QLabel(self.widget_11)
         self.text_duration_label.setObjectName(u"text_duration_label")
         self.text_duration_label.setGeometry(QRect(9, 9, 341, 19))
-        self.text_duration_label.setFont(font2)
+        self.text_duration_label.setFont(font4)
         self.text_duration_slider = QSlider(self.widget_11)
         self.text_duration_slider.setObjectName(u"text_duration_slider")
         self.text_duration_slider.setGeometry(QRect(9, 34, 281, 22))
@@ -345,7 +345,7 @@ class Ui_MainWindow(object):
         self.volume_alert_label = QLabel(self.widget_12)
         self.volume_alert_label.setObjectName(u"volume_alert_label")
         self.volume_alert_label.setGeometry(QRect(9, 9, 341, 19))
-        self.volume_alert_label.setFont(font2)
+        self.volume_alert_label.setFont(font4)
         self.volume_alert_slider = QSlider(self.widget_12)
         self.volume_alert_slider.setObjectName(u"volume_alert_slider")
         self.volume_alert_slider.setGeometry(QRect(9, 34, 281, 22))
@@ -365,7 +365,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_3.setObjectName(u"verticalLayout_3")
         self.label_3 = QLabel(self.widget_15)
         self.label_3.setObjectName(u"label_3")
-        self.label_3.setFont(font2)
+        self.label_3.setFont(font4)
 
         self.verticalLayout_3.addWidget(self.label_3)
 
@@ -387,7 +387,7 @@ class Ui_MainWindow(object):
         self.gridLayout_2.setObjectName(u"gridLayout_2")
         self.alert_gif_path = QLabel(self.widget_14)
         self.alert_gif_path.setObjectName(u"alert_gif_path")
-        self.alert_gif_path.setFont(font2)
+        self.alert_gif_path.setFont(font4)
 
         self.gridLayout_2.addWidget(self.alert_gif_path, 0, 0, 1, 1)
 
@@ -412,7 +412,7 @@ class Ui_MainWindow(object):
         self.gridLayout.setObjectName(u"gridLayout")
         self.allert_sound_path_label = QLabel(self.widget_16)
         self.allert_sound_path_label.setObjectName(u"allert_sound_path_label")
-        self.allert_sound_path_label.setFont(font2)
+        self.allert_sound_path_label.setFont(font4)
 
         self.gridLayout.addWidget(self.allert_sound_path_label, 0, 0, 1, 1)
 
@@ -436,7 +436,7 @@ class Ui_MainWindow(object):
         self.checkBox = QCheckBox(self.alert_settings_canvas)
         self.checkBox.setObjectName(u"checkBox")
         self.checkBox.setGeometry(QRect(10, 10, 111, 20))
-        self.checkBox.setFont(font2)
+        self.checkBox.setFont(font4)
         self.tabWidget.addTab(self.tab_3, "")
         self.alert_settings_canvas.raise_()
         self.widget_7.raise_()
@@ -453,7 +453,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_4.setObjectName(u"verticalLayout_4")
         self.wallet_api_key_label = QLabel(self.widget_4)
         self.wallet_api_key_label.setObjectName(u"wallet_api_key_label")
-        self.wallet_api_key_label.setFont(font2)
+        self.wallet_api_key_label.setFont(font4)
 
         self.verticalLayout_4.addWidget(self.wallet_api_key_label)
 
@@ -491,7 +491,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_5.setObjectName(u"verticalLayout_5")
         self.wallet_addr_label = QLabel(self.widget_5)
         self.wallet_addr_label.setObjectName(u"wallet_addr_label")
-        self.wallet_addr_label.setFont(font2)
+        self.wallet_addr_label.setFont(font4)
 
         self.verticalLayout_5.addWidget(self.wallet_addr_label)
 
@@ -575,6 +575,119 @@ class Ui_MainWindow(object):
         self.gridLayout_8.addWidget(self.label_10, 1, 0, 1, 1)
 
         self.tabWidget.addTab(self.tab_4, "")
+        self.tab = QWidget()
+        self.tab.setObjectName(u"tab")
+        self.bad_words_widget = QWidget(self.tab)
+        self.bad_words_widget.setObjectName(u"bad_words_widget")
+        self.bad_words_widget.setGeometry(QRect(10, 10, 381, 541))
+        self.verticalLayout_9 = QVBoxLayout(self.bad_words_widget)
+        self.verticalLayout_9.setObjectName(u"verticalLayout_9")
+        self.widget_19 = QWidget(self.bad_words_widget)
+        self.widget_19.setObjectName(u"widget_19")
+        self.gridLayout_9 = QGridLayout(self.widget_19)
+        self.gridLayout_9.setObjectName(u"gridLayout_9")
+        self.gridLayout_9.setContentsMargins(0, 0, 0, -1)
+        self.filter_comboBox = QComboBox(self.widget_19)
+        self.filter_comboBox.addItem("")
+        self.filter_comboBox.addItem("")
+        self.filter_comboBox.addItem("")
+        self.filter_comboBox.setObjectName(u"filter_comboBox")
+
+        self.gridLayout_9.addWidget(self.filter_comboBox, 1, 1, 1, 1)
+
+        self.filter_urls_checkbox_label = QLabel(self.widget_19)
+        self.filter_urls_checkbox_label.setObjectName(u"filter_urls_checkbox_label")
+        self.filter_urls_checkbox_label.setFont(font4)
+
+        self.gridLayout_9.addWidget(self.filter_urls_checkbox_label, 1, 0, 1, 1)
+
+
+        self.verticalLayout_9.addWidget(self.widget_19)
+
+        self.filter_settings_faq = QLabel(self.bad_words_widget)
+        self.filter_settings_faq.setObjectName(u"filter_settings_faq")
+        self.filter_settings_faq.setFont(font4)
+
+        self.verticalLayout_9.addWidget(self.filter_settings_faq)
+
+        self.filter_textEdit = QTextEdit(self.bad_words_widget)
+        self.filter_textEdit.setObjectName(u"filter_textEdit")
+        self.filter_textEdit.setMinimumSize(QSize(40, 100))
+        self.filter_textEdit.setFont(font5)
+
+        self.verticalLayout_9.addWidget(self.filter_textEdit)
+
+        self.filter_save_btn = QPushButton(self.bad_words_widget)
+        self.filter_save_btn.setObjectName(u"filter_save_btn")
+        self.filter_save_btn.setMinimumSize(QSize(352, 40))
+        self.filter_save_btn.setMaximumSize(QSize(353, 65))
+        self.filter_save_btn.setFont(font1)
+
+        self.verticalLayout_9.addWidget(self.filter_save_btn)
+
+        self.test_filter_widget = QWidget(self.bad_words_widget)
+        self.test_filter_widget.setObjectName(u"test_filter_widget")
+        font10 = QFont()
+        font10.setPointSize(6)
+        font10.setBold(True)
+        font10.setKerning(False)
+        self.test_filter_widget.setFont(font10)
+        self.verticalLayout_10 = QVBoxLayout(self.test_filter_widget)
+        self.verticalLayout_10.setObjectName(u"verticalLayout_10")
+        self.verticalLayout_10.setContentsMargins(0, -1, 0, -1)
+        self.test_filter_user_label = QLabel(self.test_filter_widget)
+        self.test_filter_user_label.setObjectName(u"test_filter_user_label")
+        self.test_filter_user_label.setFont(font4)
+
+        self.verticalLayout_10.addWidget(self.test_filter_user_label)
+
+        self.test_filter_user_textedit = QTextEdit(self.test_filter_widget)
+        self.test_filter_user_textedit.setObjectName(u"test_filter_user_textedit")
+        self.test_filter_user_textedit.setMinimumSize(QSize(100, 100))
+        self.test_filter_user_textedit.setFont(font5)
+
+        self.verticalLayout_10.addWidget(self.test_filter_user_textedit)
+
+        self.result_label = QLabel(self.test_filter_widget)
+        self.result_label.setObjectName(u"result_label")
+        self.result_label.setFont(font4)
+
+        self.verticalLayout_10.addWidget(self.result_label)
+
+        self.test_result_textEdit = QTextEdit(self.test_filter_widget)
+        self.test_result_textEdit.setObjectName(u"test_result_textEdit")
+        self.test_result_textEdit.setFont(font5)
+        self.test_result_textEdit.setReadOnly(True)
+
+        self.verticalLayout_10.addWidget(self.test_result_textEdit)
+
+
+        self.verticalLayout_9.addWidget(self.test_filter_widget)
+
+        self.widget_20 = QWidget(self.tab)
+        self.widget_20.setObjectName(u"widget_20")
+        self.widget_20.setGeometry(QRect(410, 10, 391, 531))
+        self.verticalLayout_11 = QVBoxLayout(self.widget_20)
+        self.verticalLayout_11.setObjectName(u"verticalLayout_11")
+        self.filter_faq = QLabel(self.widget_20)
+        self.filter_faq.setObjectName(u"filter_faq")
+        self.filter_faq.setFont(font4)
+        self.filter_faq.setAlignment(Qt.AlignCenter)
+
+        self.verticalLayout_11.addWidget(self.filter_faq)
+
+        self.filter_textBrowser = QTextEdit(self.widget_20)
+        self.filter_textBrowser.setObjectName(u"filter_textBrowser")
+        self.filter_textBrowser.setMinimumSize(QSize(0, 300))
+        self.filter_textBrowser.setMaximumSize(QSize(373, 16777215))
+        self.filter_textBrowser.setFont(font1)
+        self.filter_textBrowser.setLineWrapMode(QTextEdit.WidgetWidth)
+        self.filter_textBrowser.setReadOnly(True)
+        self.filter_textBrowser.setProperty(u"tabStopWidth", 80)
+
+        self.verticalLayout_11.addWidget(self.filter_textBrowser)
+
+        self.tabWidget.addTab(self.tab, "")
 
         self.verticalLayout.addWidget(self.tabWidget)
 
@@ -594,24 +707,24 @@ class Ui_MainWindow(object):
 
         self.label_4 = QLabel(self.frame)
         self.label_4.setObjectName(u"label_4")
-        font10 = QFont()
-        font10.setPointSize(9)
-        font10.setBold(True)
-        font10.setKerning(False)
-        self.label_4.setFont(font10)
+        font11 = QFont()
+        font11.setPointSize(9)
+        font11.setBold(True)
+        font11.setKerning(False)
+        self.label_4.setFont(font11)
 
         self.gridLayout_5.addWidget(self.label_4, 0, 1, 1, 1)
 
         self.telegram_link_1 = QLabel(self.frame)
         self.telegram_link_1.setObjectName(u"telegram_link_1")
-        self.telegram_link_1.setFont(font10)
+        self.telegram_link_1.setFont(font11)
         self.telegram_link_1.setStyleSheet(u"color: blue")
 
         self.gridLayout_5.addWidget(self.telegram_link_1, 0, 2, 1, 1)
 
         self.telegram_link_2 = QLabel(self.frame)
         self.telegram_link_2.setObjectName(u"telegram_link_2")
-        self.telegram_link_2.setFont(font10)
+        self.telegram_link_2.setFont(font11)
         self.telegram_link_2.setStyleSheet(u"color:blue;")
 
         self.gridLayout_5.addWidget(self.telegram_link_2, 0, 3, 1, 1)
@@ -624,6 +737,7 @@ class Ui_MainWindow(object):
         self.retranslateUi(MainWindow)
 
         self.tabWidget.setCurrentIndex(0)
+        self.filter_comboBox.setCurrentIndex(2)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
@@ -662,15 +776,15 @@ class Ui_MainWindow(object):
         self.alert_settings_canvas.setStatusTip("")
 #endif // QT_CONFIG(statustip)
         self.label_20.setText(QCoreApplication.translate("MainWindow", u"\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435 \u0448\u0430\u0431\u043b\u043e\u043d\u0430", None))
-        self.name_shema_textbox.setPlainText(QCoreApplication.translate("MainWindow", u"dvcddvdvd", None))
+        self.name_shema_textbox.setPlainText("")
         self.text_duration_label.setText(QCoreApplication.translate("MainWindow", u"\u0414\u043b\u0438\u0442\u0435\u043b\u044c\u043d\u043e\u0441\u0442\u044c \u043e\u0442\u043e\u0431\u0440\u0430\u0436\u0435\u043d\u0438\u044f \u0442\u0435\u043a\u0441\u0442\u0430(c\u0435\u043a.)", None))
         self.volume_alert_label.setText(QCoreApplication.translate("MainWindow", u"\u0413\u0440\u043e\u043c\u043a\u043e\u0441\u0442\u044c \u0443\u0432\u0435\u0434\u043e\u043c\u043b\u0435\u043d\u0438\u044f", None))
         self.label_3.setText(QCoreApplication.translate("MainWindow", u"\u041c\u0438\u043d\u0438\u043c\u0430\u043b\u044c\u043d\u0430\u044f \u0446\u0435\u043d\u0430 \u0441\u0440\u0430\u0431\u0430\u0442\u044b\u0432\u0430\u043d\u0438\u044f", None))
         self.alert_gif_path.setText(QCoreApplication.translate("MainWindow", u"\u041f\u0443\u0442\u044c \u043a \u0433\u0438\u0444", None))
-        self.alert_gif_textbox.setPlainText(QCoreApplication.translate("MainWindow", u"ewsfewascfdawfaqedvdvcdsvcdvdvadevdadvaedfvdevdevcdfdsdscscv", None))
+        self.alert_gif_textbox.setPlainText("")
         self.search_file_gif_btn.setText(QCoreApplication.translate("MainWindow", u"\u041e\u0431\u0437\u043e\u0440", None))
         self.allert_sound_path_label.setText(QCoreApplication.translate("MainWindow", u"\u041f\u0443\u0442\u044c \u043a \u0430\u0443\u0434\u0438\u043e", None))
-        self.allert_sound_path_textbox.setPlainText(QCoreApplication.translate("MainWindow", u"scscscxerghjmnhgfredertjykijhgfdsdfrhjkjhgfdsderfgverdfgvefgvea", None))
+        self.allert_sound_path_textbox.setPlainText("")
         self.search_path_audio_btn.setText(QCoreApplication.translate("MainWindow", u"\u041e\u0431\u0437\u043e\u0440", None))
         self.save_shema_button.setText(QCoreApplication.translate("MainWindow", u"\u0421\u043e\u0445\u0440\u0430\u043d\u0438\u0442\u044c \u0448\u0430\u0431\u043b\u043e\u043d", None))
         self.checkBox.setText(QCoreApplication.translate("MainWindow", u"\u0412\u043a\u043b/\u0412\u044b\u043a\u043b", None))
@@ -683,7 +797,7 @@ class Ui_MainWindow(object):
 "li.unchecked::marker { content: \"\\2610\"; }\n"
 "li.checked::marker { content: \"\\2612\"; }\n"
 "</style></head><body style=\" font-family:'.AppleSystemUIFont'; font-size:10pt; font-weight:700; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">dsfvdsvfdzvdvdvdvvdzvdzxvzdvdfddddffsdefaefefefwrfqwefq</span></p></body></html>", None))
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>", None))
         self.wallet_api_key_button.setText(QCoreApplication.translate("MainWindow", u"\u0421\u043e\u0445\u0440\u0430\u043d\u0438\u0442\u044c", None))
         self.wallet_faq_label.setText(QCoreApplication.translate("MainWindow", u"\u0413\u0434\u0435 \u043f\u043e\u043b\u0443\u0447\u0438\u0442\u044c \u0442\u043e\u043a\u0435\u043d?", None))
         self.wallet_addr_label.setText(QCoreApplication.translate("MainWindow", u"\u0410\u0434\u0440\u0435\u0441 \u043a\u043e\u0448\u0435\u043b\u044c\u043a\u0430", None))
@@ -694,7 +808,7 @@ class Ui_MainWindow(object):
 "li.unchecked::marker { content: \"\\2610\"; }\n"
 "li.checked::marker { content: \"\\2612\"; }\n"
 "</style></head><body style=\" font-family:'.AppleSystemUIFont'; font-size:11pt; font-weight:700; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">jkjhgfdssdfghjhgfdsdfghgfdsdfghjhgfdsjkjhgfdsdfghjhgfdsdfghgfdssdfg</span></p></body></html>", None))
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>", None))
         self.wallet_addr_button.setText(QCoreApplication.translate("MainWindow", u"\u0421\u043e\u0445\u0440\u0430\u043d\u0438\u0442\u044c", None))
         self.donate_qr.setText("")
         self.donate_desig_faq_label.setText(QCoreApplication.translate("MainWindow", u"\u041f\u043e\u0434\u0434\u0435\u0440\u0436\u0430\u0442\u044c \u0440\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u0447\u0438\u043a\u0430", None))
@@ -703,6 +817,306 @@ class Ui_MainWindow(object):
         self.label_5.setText(QCoreApplication.translate("MainWindow", u"GOVNO", None))
         self.label_10.setText("")
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_4), QCoreApplication.translate("MainWindow", u"\u041d\u0430\u0441\u0442\u0440\u043e\u0439\u043a\u0438 \u043a\u043e\u0448\u0435\u043b\u044c\u043a\u0430", None))
+        self.filter_comboBox.setItemText(0, QCoreApplication.translate("MainWindow", u"\u041d\u0435 \u043e\u0442\u043e\u0431\u0440\u0430\u0436\u0430\u0442\u044c \u0442\u0435\u043a\u0441\u0442 \u0434\u043e\u043d\u0430\u0442\u0430", None))
+        self.filter_comboBox.setItemText(1, QCoreApplication.translate("MainWindow", u"\u0426\u0435\u043d\u0437\u0443\u0440\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0441\u0441\u044b\u043b\u043a\u0438", None))
+        self.filter_comboBox.setItemText(2, QCoreApplication.translate("MainWindow", u"\u0411\u0435\u0437 \u0446\u0435\u043d\u0437\u0443\u0440\u044b", None))
+
+        self.filter_urls_checkbox_label.setText(QCoreApplication.translate("MainWindow", u"\u0424\u0438\u043b\u044c\u0442\u0440\u0430\u0446\u0438\u044f \u0441\u0441\u044b\u043b\u043e\u043a:", None))
+        self.filter_settings_faq.setText(QCoreApplication.translate("MainWindow", u"\u041d\u0430\u0441\u0442\u0440\u043e\u0439\u043a\u0430 \u0444\u0438\u043b\u044c\u0442\u0440\u0430 \u0441\u043b\u043e\u0432", None))
+        self.filter_save_btn.setText(QCoreApplication.translate("MainWindow", u"\u0421\u043e\u0445\u0440\u0430\u043d\u0438\u0442\u044c \u0444\u0438\u043b\u044c\u0442\u0440", None))
+        self.test_filter_user_label.setText(QCoreApplication.translate("MainWindow", u"\u0422\u0435\u043a\u0441\u0442 \u0434\u043b\u044f \u0442\u0435\u0441\u0442\u0430", None))
+        self.result_label.setText(QCoreApplication.translate("MainWindow", u"\u0420\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442", None))
+        self.filter_faq.setText(QCoreApplication.translate("MainWindow", u"\u0421\u043f\u0440\u0430\u0432\u043a\u0430", None))
+        self.filter_textBrowser.setMarkdown(QCoreApplication.translate("MainWindow", u"**\u0411\u0430\u0437\u043e\u0432\u044b\u0435 \u043f\u0440\u0438\u043d\u0446\u0438\u043f\u044b \u0444\u0438\u043b\u044c\u0442\u0440\u0430\u0446\u0438\u0438**\n"
+"\n"
+"\u041d\u0430\u043f\u0440\u0438\u043c\u0435\u0440, \u0432 \u0440\u0430\u0437\u0434\u0435\u043b\u0435 \"\u041d\u0430\u0441\u0442\u0440\u043e\u0439\u043a\u0430 \u0444\u0438\u043b\u044c\u0442\u0440\u0430\" \u0443\u043a\u0430\u0436\u0435\u043c \u0441\u043b\u043e\u0432\u043e \u0438\u0434\u0438\u043e\u0442. \u0421\u0438\u0441\u0442\u0435\u043c\u0430 \u0437\u0430\u043c\u0435\u043d\u0438\u0442 \u0435\u0433\u043e\n"
+"\u0430\u0432\u0442\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438:\n"
+"\n"
+"    \u0424\u0438\u043b\u044c\u0442\u0440\u0443\u0435\u043c\u044b\u0435 \u0441\u043b\u043e\u0432\u0430: \u0438\u0434\u0438\u043e\u0442\n"
+"\n"
+"    \u0418\u0441\u0445\u043e\u0434\u043d\u043e\u0435 \u0441\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u0435: \u0422\u044b \u0432\u0435\u0434\u0435\u0448\u044c \u0441\u0435\u0431\u044f \u043a\u0430\u043a \u0438\u0434\u0438"
+                        "\u043e\u0442\n"
+"\n"
+"    \u0420\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442 \u043d\u0430 \u0441\u0442\u0440\u0438\u043c\u0435: \u0422\u044b \u0432\u0435\u0434\u0435\u0448\u044c \u0441\u0435\u0431\u044f \u043a\u0430\u043a *****\n"
+"\n"
+"**\u0420\u0430\u0431\u043e\u0442\u0430 \u0441 \u0448\u0430\u0431\u043b\u043e\u043d\u0430\u043c\u0438**\n"
+"\n"
+"\u0412 \u043f\u043e\u043b\u0435 \u043d\u0430\u0441\u0442\u0440\u043e\u0435\u043a \u043c\u043e\u0436\u043d\u043e \u0437\u0430\u0434\u0430\u0432\u0430\u0442\u044c \u043f\u0440\u0430\u0432\u0438\u043b\u0430 \u043f\u043e\u0438\u0441\u043a\u0430 \u0441 \u043f\u043e\u043c\u043e\u0449\u044c\u044e \u0441\u043f\u0435\u0446\u0438\u0430\u043b\u044c\u043d\u044b\u0445 \u0441\u0438\u043c\u0432\u043e\u043b\u043e\u0432.\n"
+"\u0421\u0438\u0441\u0442\u0435\u043c\u0430 \u043e\u0431\u043d\u0430\u0440\u0443\u0436\u0438\u0442 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u044f \u043f\u043e \u0448\u0430\u0431\u043b\u043e\u043d\u0443 \u0438 \u0437\u0430\u043c\u0435\u043d\u0438\u0442"
+                        " \u0438\u0445.\n"
+"\n"
+"\u0420\u0435\u0433\u0443\u043b\u044f\u0440\u043d\u044b\u0435 \u0432\u044b\u0440\u0430\u0436\u0435\u043d\u0438\u044f \u2014 \u0438\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442 \u0434\u043b\u044f \u0433\u0438\u0431\u043a\u043e\u0433\u043e \u043f\u043e\u0438\u0441\u043a\u0430 \u0438 \u0437\u0430\u043c\u0435\u043d\u044b \u0442\u0435\u043a\u0441\u0442\u0430. \u041e\u043d\u0438\n"
+"\u0438\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u044e\u0442 \u0443\u043d\u0438\u043a\u0430\u043b\u044c\u043d\u044b\u0439 \u0441\u0438\u043d\u0442\u0430\u043a\u0441\u0438\u0441, \u043d\u0430\u0447\u0438\u043d\u0430\u044e\u0449\u0438\u0439\u0441\u044f \u0441 re:\n"
+"\n"
+"**\u041f\u0440\u0438\u043c\u0435\u0440 1**: \u0417\u0430\u043c\u0435\u043d\u0430 \u043b\u044e\u0431\u043e\u0433\u043e \u0441\u0438\u043c\u0432\u043e\u043b\u0430\n"
+"\n"
+"\u0421\u0438\u043c\u0432\u043e\u043b . \u0437\u0430\u043c\u0435\u043d\u044f\u0435\u0442 \u043b\u044e\u0431\u043e\u0439 \u043e\u0434\u0438\u043d\u043e\u0447\u043d\u044b\u0439"
+                        " \u0441\u0438\u043c\u0432\u043e\u043b. \u041d\u0430\u0439\u0434\u0435\u043c \u0441\u043b\u043e\u0432\u0430 \u0438\u0437 5 \u0431\u0443\u043a\u0432, \u043d\u0430\u0447\u0438\u043d\u0430\u044e\u0449\u0438\u0435\u0441\u044f\n"
+"\u043d\u0430 \u0413 \u0438 \u0437\u0430\u043a\u0430\u043d\u0447\u0438\u0432\u0430\u044e\u0449\u0438\u0435\u0441\u044f \u043d\u0430 \u041a:\n"
+"\n"
+"    \u0424\u0438\u043b\u044c\u0442\u0440\u0443\u0435\u043c\u044b\u0435 \u0441\u043b\u043e\u0432\u0430: re:\u0433...\u043a\n"
+"\n"
+"    \u0418\u0441\u0445\u043e\u0434\u043d\u043e\u0435 \u0441\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u0435: \u0422\u044b \u0433\u043e\u0432\u043e\u0440\u0438\u0448\u044c \u0435\u0440\u0443\u043d\u0434\u0443, \u0433\u0440\u044f\u0437\u043a\n"
+"\n"
+"    \u0420\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442 \u043d\u0430 \u0441\u0442\u0440\u0438\u043c\u0435: \u0422\u044b \u0433\u043e\u0432\u043e\u0440\u0438\u0448\u044c \u0435\u0440\u0443\u043d\u0434\u0443, *****\n"
+"\n"
+"**\u041f\u0440\u0438\u043c\u0435\u0440 2**: \u0417"
+                        "\u0430\u043c\u0435\u043d\u0430 \u0441\u043f\u0435\u0446. \u0441\u0438\u043c\u0432\u043e\u043b\u043e\u0432 ()[]-^|?!:*+$<>.\n"
+"\n"
+"\u0427\u0442\u043e\u0431\u044b \u0437\u0430\u043c\u0435\u043d\u0438\u0442\u044c \u0441\u043f\u0435\u0446 \u0441\u0438\u043c\u0432\u043e\u043b, \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0439\u0442\u0435 \u044d\u043a\u0440\u0430\u043d\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u0435 \\: \u041d\u0430\u043f\u0440\u0438\u043c\u0435\u0440 \u0437\u0430\u043c\u0435\u043d\u0438\u043c\n"
+"\u0441\u0438\u043c\u0432\u043e\u043b \".\":\n"
+"\n"
+"    \u0424\u0438\u043b\u044c\u0442\u0440\u0443\u0435\u043c\u044b\u0435 \u0441\u043b\u043e\u0432\u0430: re:\\.\n"
+"\n"
+"    \u0418\u0441\u0445\u043e\u0434\u043d\u043e\u0435 \u0441\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u0435: \u042d\u0442\u043e \u0442\u0435\u0441\u0442.\n"
+"\n"
+"    \u0420\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442 \u043d\u0430 \u0441\u0442\u0440\u0438\u043c\u0435: \u042d\u0442\u043e \u0442\u0435\u0441\u0442*****\n"
+"\n"
+"\u042d"
+                        "\u043a\u0440\u0430\u043d\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u043d\u0443\u0436\u043d\u043e \u043a\u0430\u0436\u0434\u044b\u0439 \u0441\u0438\u043c\u0432\u043e\u043b.\n"
+"\n"
+"**\u041f\u0440\u0438\u043c\u0435\u0440 3: **\u0417\u0430\u043c\u0435\u043d\u0430 \u043f\u0440\u043e\u0431\u0435\u043b\u043e\u0432\n"
+"\n"
+"\u0414\u043b\u044f \u0437\u0430\u043c\u0435\u043d\u044b \u043f\u0440\u043e\u0431\u0435\u043b\u043e\u0432 \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0439\u0442\u0435 re:\\s\n"
+"\n"
+"    \u0424\u0438\u043b\u044c\u0442\u0440\u0443\u0435\u043c\u044b\u0435 \u0441\u043b\u043e\u0432\u0430: re:\\s\n"
+"\n"
+"    \u0418\u0441\u0445\u043e\u0434\u043d\u043e\u0435 \u0441\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u0435: \u0423\u0431\u0435\u0440\u0438 \u043f\u0440\u043e\u0431\u0435\u043b\u044b\n"
+"\n"
+"    \u0420\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442 \u043d\u0430 \u0441\u0442\u0440\u0438\u043c\u0435: \u0423\u0431\u0435\u0440\u0438****\u043f\u0440\u043e\u0431\u0435\u043b\u044b\n"
+"\n"
+"**\u041f\u0440"
+                        "\u0438\u043c\u0435\u0440 4**: \u041f\u0440\u043e\u0431\u0435\u043b\u044b \u0432 \u0441\u043b\u043e\u0432\u0430\u0445\n"
+"\n"
+"\u0414\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430 \u0441\u043b\u043e\u0432 \u0441 \u043f\u0440\u043e\u0431\u0435\u043b\u0430\u043c\u0438 \u043c\u0435\u0436\u0434\u0443 \u0431\u0443\u043a\u0432\u0430\u043c\u0438 \u043f\u0440\u0438\u043c\u0435\u043d\u0438\u0442\u0435 \\s*:\n"
+"\n"
+"    \u0424\u0438\u043b\u044c\u0442\u0440\u0443\u0435\u043c\u044b\u0435 \u0441\u043b\u043e\u0432\u0430: re:\u0438\\s*\u0434\\s*\u0438\\s*\u043e\\s*\u0442\n"
+"\n"
+"    \u0418\u0441\u0445\u043e\u0434\u043d\u043e\u0435 \u0441\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u0435: \u0422\u044b \u0438 \u0434 \u0438 \u043e \u0442\n"
+"\n"
+"    \u0420\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442 \u043d\u0430 \u0441\u0442\u0440\u0438\u043c\u0435: \u0422\u044b *****\n"
+"\n"
+"**\u0420\u0430\u0441\u0448\u0438\u0440\u0435\u043d\u043d\u044b\u0435 \u0448\u0430\u0431\u043b\u043e\u043d\u044b**\n"
+"\n"
+"\u041a\u0432\u0430\u0434"
+                        "\u0440\u0430\u0442\u043d\u044b\u0435 \u0441\u043a\u043e\u0431\u043a\u0438 \u0434\u043b\u044f \u0432\u044b\u0431\u043e\u0440\u0430 \u0441\u0438\u043c\u0432\u043e\u043b\u043e\u0432\n"
+"\n"
+"    \u0424\u0438\u043b\u044c\u0442\u0440\u0443\u0435\u043c\u044b\u0435 \u0441\u043b\u043e\u0432\u0430: re:\u0438[\u0434\u043f]\u0438\u043e\u0442\n"
+"\n"
+"    \u0418\u0441\u0445\u043e\u0434\u043d\u043e\u0435 \u0441\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u0435: \u0418\u0434\u0438\u043e\u0442 \u0438\u043b\u0438 \u0438\u043f\u0438\u043e\u0442 \u2014 \u043e\u0431\u0430 \u0432\u0430\u0440\u0438\u0430\u043d\u0442\u0430\n"
+"\n"
+"    \u0420\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442 \u043d\u0430 \u0441\u0442\u0440\u0438\u043c\u0435: ***** \u0438\u043b\u0438 ***** \u2014 \u043e\u0431\u0430 \u0432\u0430\u0440\u0438\u0430\u043d\u0442\u0430\n"
+"\n"
+"**\u0414\u0438\u0430\u043f\u0430\u0437\u043e\u043d\u044b \u0431\u0443\u043a\u0432**\n"
+"\n"
+"    \u0424\u0438\u043b\u044c\u0442\u0440\u0443\u0435\u043c\u044b\u0435 \u0441\u043b\u043e\u0432"
+                        "\u0430: re:[\u0430-\u044f]\u0438\u043e\u0442\n"
+"\n"
+"    \u0418\u0441\u0445\u043e\u0434\u043d\u043e\u0435 \u0441\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u0435: \u0411\u0438\u043e\u0442 \u0438\u043b\u0438 \u0444\u0438\u043e\u0442\n"
+"\n"
+"    \u0420\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442 \u043d\u0430 \u0441\u0442\u0440\u0438\u043c\u0435: ***** \u0438\u043b\u0438 *****\n"
+"\n"
+"**\u0418\u0441\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435 \u0441\u0438\u043c\u0432\u043e\u043b\u043e\u0432**\n"
+"\n"
+"\u0421\u0438\u043c\u0432\u043e\u043b ^ \u0438\u0441\u043a\u043b\u044e\u0447\u0430\u0435\u0442 \u0431\u0443\u043a\u0432\u044b \u0438\u0437 \u043f\u043e\u0438\u0441\u043a\u0430:\n"
+"\n"
+"    \u0424\u0438\u043b\u044c\u0442\u0440\u0443\u0435\u043c\u044b\u0435 \u0441\u043b\u043e\u0432\u0430: re:\u0438[^\u0434]\u0438\u043e\u0442\n"
+"\n"
+"    \u0418\u0441\u0445\u043e\u0434\u043d\u043e\u0435 \u0441\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u0435: \u0418\u0434\u0438\u043e\u0442 \u0438\u043b\u0438 \u0438\u0441\u0438"
+                        "\u043e\u0442\n"
+"\n"
+"    \u0420\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442 \u043d\u0430 \u0441\u0442\u0440\u0438\u043c\u0435: \u0418\u0434\u0438\u043e\u0442 \u0438\u043b\u0438 *****\n"
+"\n"
+"**\u041f\u0435\u0440\u0435\u0447\u0438\u0441\u043b\u0435\u043d\u0438\u0435 \u0432\u0430\u0440\u0438\u0430\u043d\u0442\u043e\u0432**\n"
+"\n"
+"\u0418\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0439\u0442\u0435 | \u0434\u043b\u044f \u0430\u043b\u044c\u0442\u0435\u0440\u043d\u0430\u0442\u0438\u0432\u043d\u044b\u0445 \u0441\u043b\u043e\u0432:\n"
+"\n"
+"    \u0424\u0438\u043b\u044c\u0442\u0440\u0443\u0435\u043c\u044b\u0435 \u0441\u043b\u043e\u0432\u0430: re:\u0438\u0434\u0438\u043e\u0442|\u0434\u0443\u0440\u0430\u043a\n"
+"\n"
+"    \u0418\u0441\u0445\u043e\u0434\u043d\u043e\u0435 \u0441\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u0435: \u0422\u044b \u0438\u0434\u0438\u043e\u0442 \u0438 \u0434\u0443\u0440\u0430\u043a\n"
+"\n"
+"    \u0420\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442 \u043d\u0430 \u0441\u0442\u0440\u0438\u043c"
+                        "\u0435: \u0422\u044b ***** \u0438 *****\n"
+"\n"
+"**\u0421\u043f\u0435\u0446\u0438\u0430\u043b\u044c\u043d\u044b\u0435 \u0441\u0438\u043c\u0432\u043e\u043b\u044b**\n"
+"\n"
+"\u0417\u0432\u0435\u0437\u0434\u043e\u0447\u043a\u0430 \u0434\u043b\u044f \u0443\u043a\u0430\u0437\u0430\u043d\u0438\u044f \u043b\u044e\u0431\u043e\u0433\u043e \u043a\u043e\u043b\u0438\u0447\u0435\u0441\u0442\u0432\u0430 \u0441\u0438\u043c\u0432\u043e\u043b\u043e\u0432\n"
+"\n"
+"**\u041e\u0441\u0442\u043e\u0440\u043e\u0436\u043d\u043e \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0439\u0442\u0435 \u043a\u043e\u043c\u0431\u0438\u043d\u0430\u0446\u0438\u044e \".*\"\n"
+"\n"
+"    \u0424\u0438\u043b\u044c\u0442\u0440\u0443\u0435\u043c\u044b\u0435 \u0441\u043b\u043e\u0432\u0430: re:\u043f.*a\n"
+"\n"
+"    \u0418\u0441\u0445\u043e\u0434\u043d\u043e\u0435 \u0441\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u0435: \u041f\u0440\u0438\u0432\u0435\u0442 \u043a\u0430\u043a \u0434\u0435\u043b\u0430?\n"
+"\n"
+"    \u0420\u0435\u0437\u0443\u043b\u044c\u0442\u0430"
+                        "\u0442 \u043d\u0430 \u0441\u0442\u0440\u0438\u043c\u0435: *****?\n"
+"\n"
+"    \u0424\u0438\u043b\u044c\u0442\u0440\u0443\u0435\u043c\u044b\u0435 \u0441\u043b\u043e\u0432\u0430: re:[a-z]* (\u043b\u0430\u0442\u0438\u043d\u0441\u043a\u0438\u0435 \u0441\u043b\u043e\u0432\u0430)\n"
+"\n"
+"    \u0418\u0441\u0445\u043e\u0434\u043d\u043e\u0435 \u0441\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u0435: \u042f \u043a\u0443\u043f\u0438\u043b 10 apples\n"
+"\n"
+"    \u0420\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442 \u043d\u0430 \u0441\u0442\u0440\u0438\u043c\u0435: \u042f \u043a\u0443\u043f\u0438\u043b 10 *****\n"
+"\n"
+"**\u041f\u043e\u0438\u0441\u043a \u0447\u0438\u0441\u0435\u043b**\n"
+"\n"
+"\\d \u0434\u043b\u044f \u043e\u0434\u043d\u043e\u0439 \u0446\u0438\u0444\u0440\u044b, \\d+ \u0434\u043b\u044f \u043d\u0435\u0441\u043a\u043e\u043b\u044c\u043a\u0438\u0445 \u0438 \\d{\u0447\u0438\u0441\u043b\u043e} \u0434\u043b\u044f \u0443\u043a\u0430\u0437\u0430\u043d\u0438\u044f \u0442\u043e\u0447\u043d\u043e\u0433\u043e\n"
+"\u043a"
+                        "\u043e\u043b\u0438\u0447\u0435\u0441\u0442\u0432\u0430 \u0441\u0438\u043c\u0432\u043e\u043b\u043e\u0432 \u0432 \u0447\u0438\u0441\u043b\u0435:\n"
+"\n"
+"    \u0424\u0438\u043b\u044c\u0442\u0440\u0443\u0435\u043c\u044b\u0435 \u0441\u043b\u043e\u0432\u0430: re:\\d{2} (\u0434\u0432\u0443\u0437\u043d\u0430\u0447\u043d\u044b\u0435 \u0447\u0438\u0441\u043b\u0430)\n"
+"\n"
+"    \u0418\u0441\u0445\u043e\u0434\u043d\u043e\u0435 \u0441\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u0435: \u0417\u0430\u0440\u0430\u0431\u043e\u0442\u0430\u043b 5 \u0438 99 \u043e\u0447\u043a\u043e\u0432\n"
+"\n"
+"    \u0420\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442 \u043d\u0430 \u0441\u0442\u0440\u0438\u043c\u0435: \u0417\u0430\u0440\u0430\u0431\u043e\u0442\u0430\u043b 5 \u0438 **** \u043e\u0447\u043a\u043e\u0432\n"
+"\n"
+"**\u0424\u0438\u0433\u0443\u0440\u043d\u044b\u0435 \u0441\u043a\u043e\u0431\u043a\u0438 \u0434\u043b\u044f \u043f\u043e\u0432\u0442\u043e\u0440\u043e\u0432**\n"
+"\n"
+"    \u0424\u0438\u043b\u044c\u0442\u0440\u0443\u0435\u043c"
+                        "\u044b\u0435 \u0441\u043b\u043e\u0432\u0430: re:\\d{2,4} (\u0447\u0438\u0441\u043b\u0430 \u043e\u0442 2 \u0434\u043e 4 \u0446\u0438\u0444\u0440)\n"
+"\n"
+"    \u0418\u0441\u0445\u043e\u0434\u043d\u043e\u0435 \u0441\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u0435: \u041a\u043e\u0434\u044b: 12, 345, 6789\n"
+"\n"
+"    \u0420\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442 \u043d\u0430 \u0441\u0442\u0440\u0438\u043c\u0435: \u041a\u043e\u0434\u044b: ****, ****, ****\n"
+"\n"
+"", None))
+        self.filter_textBrowser.setHtml(QCoreApplication.translate("MainWindow", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"hr { height: 1px; border-width: 0; }\n"
+"li.unchecked::marker { content: \"\\2610\"; }\n"
+"li.checked::marker { content: \"\\2612\"; }\n"
+"</style></head><body style=\" font-family:'.AppleSystemUIFont'; font-size:11pt; font-weight:700; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:600;\">\u0411\u0430\u0437\u043e\u0432\u044b\u0435 \u043f\u0440\u0438\u043d\u0446\u0438\u043f\u044b \u0444\u0438\u043b\u044c\u0442\u0440\u0430\u0446\u0438\u0438</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; font-weight:600"
+                        ";\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:400;\">\u041d\u0430\u043f\u0440\u0438\u043c\u0435\u0440, \u0432 \u0440\u0430\u0437\u0434\u0435\u043b\u0435 &quot;\u041d\u0430\u0441\u0442\u0440\u043e\u0439\u043a\u0430 \u0444\u0438\u043b\u044c\u0442\u0440\u0430&quot; \u0443\u043a\u0430\u0436\u0435\u043c \u0441\u043b\u043e\u0432\u043e \u0438\u0434\u0438\u043e\u0442. \u0421\u0438\u0441\u0442\u0435\u043c\u0430 \u0437\u0430\u043c\u0435\u043d\u0438\u0442 \u0435\u0433\u043e \u0430\u0432\u0442\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438:</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; font-weight:400;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span styl"
+                        "e=\" font-size:12pt; font-weight:400;\">    \u0424\u0438\u043b\u044c\u0442\u0440\u0443\u0435\u043c\u044b\u0435 \u0441\u043b\u043e\u0432\u0430: \u0438\u0434\u0438\u043e\u0442</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:400;\">    \u0418\u0441\u0445\u043e\u0434\u043d\u043e\u0435 \u0441\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u0435: \u0422\u044b \u0432\u0435\u0434\u0435\u0448\u044c \u0441\u0435\u0431\u044f \u043a\u0430\u043a \u0438\u0434\u0438\u043e\u0442</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:400;\">    \u0420\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442 \u043d\u0430 \u0441\u0442\u0440\u0438\u043c\u0435: \u0422\u044b \u0432\u0435\u0434\u0435\u0448\u044c \u0441\u0435\u0431\u044f \u043a\u0430\u043a *****</span></p>\n"
+"<p style=\"-qt-parag"
+                        "raph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; font-weight:400;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:600;\">\u0420\u0430\u0431\u043e\u0442\u0430 \u0441 \u0448\u0430\u0431\u043b\u043e\u043d\u0430\u043c\u0438</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; font-weight:600;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:400;\">\u0412 \u043f\u043e\u043b\u0435 \u043d\u0430\u0441\u0442\u0440\u043e\u0435\u043a \u043c\u043e\u0436\u043d\u043e \u0437\u0430\u0434\u0430\u0432\u0430\u0442\u044c \u043f\u0440\u0430\u0432\u0438\u043b\u0430"
+                        " \u043f\u043e\u0438\u0441\u043a\u0430 \u0441 \u043f\u043e\u043c\u043e\u0449\u044c\u044e \u0441\u043f\u0435\u0446\u0438\u0430\u043b\u044c\u043d\u044b\u0445 \u0441\u0438\u043c\u0432\u043e\u043b\u043e\u0432. \u0421\u0438\u0441\u0442\u0435\u043c\u0430 \u043e\u0431\u043d\u0430\u0440\u0443\u0436\u0438\u0442 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u044f \u043f\u043e \u0448\u0430\u0431\u043b\u043e\u043d\u0443 \u0438 \u0437\u0430\u043c\u0435\u043d\u0438\u0442 \u0438\u0445.</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:400;\">\u0420\u0435\u0433\u0443\u043b\u044f\u0440\u043d\u044b\u0435 \u0432\u044b\u0440\u0430\u0436\u0435\u043d\u0438\u044f \u2014 \u0438\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442 \u0434\u043b\u044f \u0433\u0438\u0431\u043a\u043e\u0433\u043e \u043f\u043e\u0438\u0441\u043a\u0430 \u0438 \u0437\u0430\u043c\u0435\u043d\u044b \u0442\u0435\u043a\u0441\u0442"
+                        "\u0430. \u041e\u043d\u0438 \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u044e\u0442 \u0443\u043d\u0438\u043a\u0430\u043b\u044c\u043d\u044b\u0439 \u0441\u0438\u043d\u0442\u0430\u043a\u0441\u0438\u0441, \u043d\u0430\u0447\u0438\u043d\u0430\u044e\u0449\u0438\u0439\u0441\u044f \u0441 re:</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; font-weight:400;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:600;\">\u041f\u0440\u0438\u043c\u0435\u0440 1</span><span style=\" font-size:12pt; font-weight:400;\">: \u0417\u0430\u043c\u0435\u043d\u0430 \u043b\u044e\u0431\u043e\u0433\u043e \u0441\u0438\u043c\u0432\u043e\u043b\u0430</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+                        "style=\" font-size:12pt; font-weight:400;\">\u0421\u0438\u043c\u0432\u043e\u043b . \u0437\u0430\u043c\u0435\u043d\u044f\u0435\u0442 \u043b\u044e\u0431\u043e\u0439 \u043e\u0434\u0438\u043d\u043e\u0447\u043d\u044b\u0439 \u0441\u0438\u043c\u0432\u043e\u043b. \u041d\u0430\u0439\u0434\u0435\u043c \u0441\u043b\u043e\u0432\u0430 \u0438\u0437 5 \u0431\u0443\u043a\u0432, \u043d\u0430\u0447\u0438\u043d\u0430\u044e\u0449\u0438\u0435\u0441\u044f \u043d\u0430 \u0413 \u0438 \u0437\u0430\u043a\u0430\u043d\u0447\u0438\u0432\u0430\u044e\u0449\u0438\u0435\u0441\u044f \u043d\u0430 \u041a:</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; font-weight:400;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:400;\">    \u0424\u0438\u043b\u044c\u0442\u0440\u0443\u0435\u043c\u044b\u0435"
+                        " \u0441\u043b\u043e\u0432\u0430: re:\u0433...\u043a</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:400;\">    \u0418\u0441\u0445\u043e\u0434\u043d\u043e\u0435 \u0441\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u0435: \u0422\u044b \u0433\u043e\u0432\u043e\u0440\u0438\u0448\u044c \u0435\u0440\u0443\u043d\u0434\u0443, \u0433\u0440\u044f\u0437\u043a</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:400;\">    \u0420\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442 \u043d\u0430 \u0441\u0442\u0440\u0438\u043c\u0435: \u0422\u044b \u0433\u043e\u0432\u043e\u0440\u0438\u0448\u044c \u0435\u0440\u0443\u043d\u0434\u0443, *****</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; tex"
+                        "t-indent:0px; font-size:12pt; font-weight:400;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:600;\">\u041f\u0440\u0438\u043c\u0435\u0440 2</span><span style=\" font-size:12pt; font-weight:400;\">: \u0417\u0430\u043c\u0435\u043d\u0430 \u0441\u043f\u0435\u0446. \u0441\u0438\u043c\u0432\u043e\u043b\u043e\u0432 ()[]-^|?!:*+$&lt;&gt;.</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:400;\">\u0427\u0442\u043e\u0431\u044b \u0437\u0430\u043c\u0435\u043d\u0438\u0442\u044c \u0441\u043f\u0435\u0446 \u0441\u0438\u043c\u0432\u043e\u043b, \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0439\u0442\u0435 \u044d\u043a\u0440\u0430\u043d\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u0435 \\: \u041d\u0430\u043f\u0440\u0438\u043c\u0435\u0440 \u0437\u0430\u043c\u0435\u043d"
+                        "\u0438\u043c \u0441\u0438\u043c\u0432\u043e\u043b &quot;.&quot;:</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; font-weight:400;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:400;\">    \u0424\u0438\u043b\u044c\u0442\u0440\u0443\u0435\u043c\u044b\u0435 \u0441\u043b\u043e\u0432\u0430: re:\\.</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:400;\">    \u0418\u0441\u0445\u043e\u0434\u043d\u043e\u0435 \u0441\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u0435: \u042d\u0442\u043e \u0442\u0435\u0441\u0442.</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0"
+                        "px;\"><span style=\" font-size:12pt; font-weight:400;\">    \u0420\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442 \u043d\u0430 \u0441\u0442\u0440\u0438\u043c\u0435: \u042d\u0442\u043e \u0442\u0435\u0441\u0442*****</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; font-weight:400;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:400;\">\u042d\u043a\u0440\u0430\u043d\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u043d\u0443\u0436\u043d\u043e \u043a\u0430\u0436\u0434\u044b\u0439 \u0441\u0438\u043c\u0432\u043e\u043b.</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; font-weight:400;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:"
+                        "0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:600;\">\u041f\u0440\u0438\u043c\u0435\u0440 3: </span><span style=\" font-size:12pt; font-weight:400;\">\u0417\u0430\u043c\u0435\u043d\u0430 \u043f\u0440\u043e\u0431\u0435\u043b\u043e\u0432</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:400;\">\u0414\u043b\u044f \u0437\u0430\u043c\u0435\u043d\u044b \u043f\u0440\u043e\u0431\u0435\u043b\u043e\u0432 \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0439\u0442\u0435 re:\\s</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; font-weight:400;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" fon"
+                        "t-size:12pt; font-weight:400;\">    \u0424\u0438\u043b\u044c\u0442\u0440\u0443\u0435\u043c\u044b\u0435 \u0441\u043b\u043e\u0432\u0430: re:\\s</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:400;\">    \u0418\u0441\u0445\u043e\u0434\u043d\u043e\u0435 \u0441\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u0435: \u0423\u0431\u0435\u0440\u0438 \u043f\u0440\u043e\u0431\u0435\u043b\u044b</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:400;\">    \u0420\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442 \u043d\u0430 \u0441\u0442\u0440\u0438\u043c\u0435: \u0423\u0431\u0435\u0440\u0438****\u043f\u0440\u043e\u0431\u0435\u043b\u044b</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0;"
+                        " text-indent:0px; font-size:12pt; font-weight:400;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:600;\">\u041f\u0440\u0438\u043c\u0435\u0440 4</span><span style=\" font-size:12pt; font-weight:400;\">: \u041f\u0440\u043e\u0431\u0435\u043b\u044b \u0432 \u0441\u043b\u043e\u0432\u0430\u0445</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:400;\">\u0414\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430 \u0441\u043b\u043e\u0432 \u0441 \u043f\u0440\u043e\u0431\u0435\u043b\u0430\u043c\u0438 \u043c\u0435\u0436\u0434\u0443 \u0431\u0443\u043a\u0432\u0430\u043c\u0438 \u043f\u0440\u0438\u043c\u0435\u043d\u0438\u0442\u0435 \\s*:</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent"
+                        ":0; text-indent:0px; font-size:12pt; font-weight:400;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:400;\">    \u0424\u0438\u043b\u044c\u0442\u0440\u0443\u0435\u043c\u044b\u0435 \u0441\u043b\u043e\u0432\u0430: re:\u0438\\s*\u0434\\s*\u0438\\s*\u043e\\s*\u0442</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:400;\">    \u0418\u0441\u0445\u043e\u0434\u043d\u043e\u0435 \u0441\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u0435: \u0422\u044b \u0438 \u0434 \u0438 \u043e \u0442</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:400;\">    \u0420\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442 \u043d\u0430 \u0441\u0442\u0440\u0438\u043c"
+                        "\u0435: \u0422\u044b *****</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; font-weight:400;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:600;\">\u0420\u0430\u0441\u0448\u0438\u0440\u0435\u043d\u043d\u044b\u0435 \u0448\u0430\u0431\u043b\u043e\u043d\u044b</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; font-weight:600;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:400;\">\u041a\u0432\u0430\u0434\u0440\u0430\u0442\u043d\u044b\u0435 \u0441\u043a\u043e\u0431\u043a\u0438 \u0434\u043b\u044f \u0432\u044b"
+                        "\u0431\u043e\u0440\u0430 \u0441\u0438\u043c\u0432\u043e\u043b\u043e\u0432</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; font-weight:400;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:400;\">    \u0424\u0438\u043b\u044c\u0442\u0440\u0443\u0435\u043c\u044b\u0435 \u0441\u043b\u043e\u0432\u0430: re:\u0438[\u0434\u043f]\u0438\u043e\u0442</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:400;\">    \u0418\u0441\u0445\u043e\u0434\u043d\u043e\u0435 \u0441\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u0435: \u0418\u0434\u0438\u043e\u0442 \u0438\u043b\u0438 \u0438\u043f\u0438\u043e\u0442 \u2014 \u043e\u0431\u0430 \u0432\u0430\u0440\u0438"
+                        "\u0430\u043d\u0442\u0430</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:400;\">    \u0420\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442 \u043d\u0430 \u0441\u0442\u0440\u0438\u043c\u0435: ***** \u0438\u043b\u0438 ***** \u2014 \u043e\u0431\u0430 \u0432\u0430\u0440\u0438\u0430\u043d\u0442\u0430</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; font-weight:400;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:600;\">\u0414\u0438\u0430\u043f\u0430\u0437\u043e\u043d\u044b \u0431\u0443\u043a\u0432</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent"
+                        ":0; text-indent:0px; font-size:12pt; font-weight:400;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:400;\">    \u0424\u0438\u043b\u044c\u0442\u0440\u0443\u0435\u043c\u044b\u0435 \u0441\u043b\u043e\u0432\u0430: re:[\u0430-\u044f]\u0438\u043e\u0442</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:400;\">    \u0418\u0441\u0445\u043e\u0434\u043d\u043e\u0435 \u0441\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u0435: \u0411\u0438\u043e\u0442 \u0438\u043b\u0438 \u0444\u0438\u043e\u0442</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:400;\">    \u0420\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442 \u043d\u0430 \u0441\u0442\u0440\u0438"
+                        "\u043c\u0435: ***** \u0438\u043b\u0438 *****</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; font-weight:400;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:600;\">\u0418\u0441\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435 \u0441\u0438\u043c\u0432\u043e\u043b\u043e\u0432</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; font-weight:600;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:400;\">\u0421\u0438\u043c\u0432\u043e\u043b ^ \u0438\u0441\u043a\u043b\u044e\u0447\u0430\u0435\u0442 \u0431\u0443\u043a"
+                        "\u0432\u044b \u0438\u0437 \u043f\u043e\u0438\u0441\u043a\u0430:</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; font-weight:400;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:400;\">    \u0424\u0438\u043b\u044c\u0442\u0440\u0443\u0435\u043c\u044b\u0435 \u0441\u043b\u043e\u0432\u0430: re:\u0438[^\u0434]\u0438\u043e\u0442</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:400;\">    \u0418\u0441\u0445\u043e\u0434\u043d\u043e\u0435 \u0441\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u0435: \u0418\u0434\u0438\u043e\u0442 \u0438\u043b\u0438 \u0438\u0441\u0438\u043e\u0442</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; mar"
+                        "gin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:400;\">    \u0420\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442 \u043d\u0430 \u0441\u0442\u0440\u0438\u043c\u0435: \u0418\u0434\u0438\u043e\u0442 \u0438\u043b\u0438 *****</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; font-weight:400;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:600;\">\u041f\u0435\u0440\u0435\u0447\u0438\u0441\u043b\u0435\u043d\u0438\u0435 \u0432\u0430\u0440\u0438\u0430\u043d\u0442\u043e\u0432</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; font-weight:600;\"><br /></p>\n"
+"<p style=\" margin-to"
+                        "p:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:400;\">\u0418\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0439\u0442\u0435 | \u0434\u043b\u044f \u0430\u043b\u044c\u0442\u0435\u0440\u043d\u0430\u0442\u0438\u0432\u043d\u044b\u0445 \u0441\u043b\u043e\u0432:</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; font-weight:400;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:400;\">    \u0424\u0438\u043b\u044c\u0442\u0440\u0443\u0435\u043c\u044b\u0435 \u0441\u043b\u043e\u0432\u0430: re:\u0438\u0434\u0438\u043e\u0442|\u0434\u0443\u0440\u0430\u043a</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent"
+                        ":0px;\"><span style=\" font-size:12pt; font-weight:400;\">    \u0418\u0441\u0445\u043e\u0434\u043d\u043e\u0435 \u0441\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u0435: \u0422\u044b \u0438\u0434\u0438\u043e\u0442 \u0438 \u0434\u0443\u0440\u0430\u043a</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:400;\">    \u0420\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442 \u043d\u0430 \u0441\u0442\u0440\u0438\u043c\u0435: \u0422\u044b ***** \u0438 *****</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; font-weight:400;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:600;\">\u0421\u043f\u0435\u0446\u0438\u0430\u043b\u044c\u043d\u044b\u0435 \u0441"
+                        "\u0438\u043c\u0432\u043e\u043b\u044b</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; font-weight:600;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:400;\">\u0417\u0432\u0435\u0437\u0434\u043e\u0447\u043a\u0430 \u0434\u043b\u044f \u0443\u043a\u0430\u0437\u0430\u043d\u0438\u044f \u043b\u044e\u0431\u043e\u0433\u043e \u043a\u043e\u043b\u0438\u0447\u0435\u0441\u0442\u0432\u0430 \u0441\u0438\u043c\u0432\u043e\u043b\u043e\u0432</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; font-weight:400;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span st"
+                        "yle=\" font-size:12pt; font-weight:400;\">**\u041e\u0441\u0442\u043e\u0440\u043e\u0436\u043d\u043e \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0439\u0442\u0435 \u043a\u043e\u043c\u0431\u0438\u043d\u0430\u0446\u0438\u044e &quot;.*&quot;</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:400;\">    \u0424\u0438\u043b\u044c\u0442\u0440\u0443\u0435\u043c\u044b\u0435 \u0441\u043b\u043e\u0432\u0430: re:\u043f.*a</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:400;\">    \u0418\u0441\u0445\u043e\u0434\u043d\u043e\u0435 \u0441\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u0435: \u041f\u0440\u0438\u0432\u0435\u0442 \u043a\u0430\u043a \u0434\u0435\u043b\u0430?</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-blo"
+                        "ck-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:400;\">    \u0420\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442 \u043d\u0430 \u0441\u0442\u0440\u0438\u043c\u0435: *****?</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; font-weight:400;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:400;\">    \u0424\u0438\u043b\u044c\u0442\u0440\u0443\u0435\u043c\u044b\u0435 \u0441\u043b\u043e\u0432\u0430: re:[a-z]* (\u043b\u0430\u0442\u0438\u043d\u0441\u043a\u0438\u0435 \u0441\u043b\u043e\u0432\u0430)</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:400;\">    \u0418\u0441\u0445\u043e\u0434\u043d\u043e\u0435 \u0441"
+                        "\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u0435: \u042f \u043a\u0443\u043f\u0438\u043b 10 apples</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:400;\">    \u0420\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442 \u043d\u0430 \u0441\u0442\u0440\u0438\u043c\u0435: \u042f \u043a\u0443\u043f\u0438\u043b 10 *****</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; font-weight:400;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:600;\">\u041f\u043e\u0438\u0441\u043a \u0447\u0438\u0441\u0435\u043b</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; "
+                        "text-indent:0px; font-size:12pt; font-weight:600;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:400;\">\\d \u0434\u043b\u044f \u043e\u0434\u043d\u043e\u0439 \u0446\u0438\u0444\u0440\u044b, \\d+ \u0434\u043b\u044f \u043d\u0435\u0441\u043a\u043e\u043b\u044c\u043a\u0438\u0445 \u0438 \\d{\u0447\u0438\u0441\u043b\u043e} \u0434\u043b\u044f \u0443\u043a\u0430\u0437\u0430\u043d\u0438\u044f \u0442\u043e\u0447\u043d\u043e\u0433\u043e \u043a\u043e\u043b\u0438\u0447\u0435\u0441\u0442\u0432\u0430 \u0441\u0438\u043c\u0432\u043e\u043b\u043e\u0432 \u0432 \u0447\u0438\u0441\u043b\u0435:</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; font-weight:400;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; te"
+                        "xt-indent:0px;\"><span style=\" font-size:12pt; font-weight:400;\">    \u0424\u0438\u043b\u044c\u0442\u0440\u0443\u0435\u043c\u044b\u0435 \u0441\u043b\u043e\u0432\u0430: re:\\d{2} (\u0434\u0432\u0443\u0437\u043d\u0430\u0447\u043d\u044b\u0435 \u0447\u0438\u0441\u043b\u0430)</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:400;\">    \u0418\u0441\u0445\u043e\u0434\u043d\u043e\u0435 \u0441\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u0435: \u0417\u0430\u0440\u0430\u0431\u043e\u0442\u0430\u043b 5 \u0438 99 \u043e\u0447\u043a\u043e\u0432</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:400;\">    \u0420\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442 \u043d\u0430 \u0441\u0442\u0440\u0438\u043c\u0435: \u0417\u0430\u0440\u0430\u0431\u043e\u0442\u0430\u043b 5 \u0438"
+                        " **** \u043e\u0447\u043a\u043e\u0432</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; font-weight:400;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:600;\">\u0424\u0438\u0433\u0443\u0440\u043d\u044b\u0435 \u0441\u043a\u043e\u0431\u043a\u0438 \u0434\u043b\u044f \u043f\u043e\u0432\u0442\u043e\u0440\u043e\u0432</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; font-weight:400;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:400;\">    \u0424\u0438\u043b\u044c\u0442\u0440\u0443\u0435\u043c\u044b\u0435 \u0441"
+                        "\u043b\u043e\u0432\u0430: re:\\d{2,4} (\u0447\u0438\u0441\u043b\u0430 \u043e\u0442 2 \u0434\u043e 4 \u0446\u0438\u0444\u0440)</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:400;\">    \u0418\u0441\u0445\u043e\u0434\u043d\u043e\u0435 \u0441\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u0435: \u041a\u043e\u0434\u044b: 12, 345, 6789</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:400;\">    \u0420\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442 \u043d\u0430 \u0441\u0442\u0440\u0438\u043c\u0435: \u041a\u043e\u0434\u044b: ****, ****, ****</span></p></body></html>", None))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab), QCoreApplication.translate("MainWindow", u"\u0424\u0438\u043b\u044c\u0442\u0440", None))
         self.label_4.setText(QCoreApplication.translate("MainWindow", u"\u0420\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u0430\u043d\u043d\u043e \u0441\u0438\u043b\u0430\u043c\u0438 ", None))
         self.telegram_link_1.setText(QCoreApplication.translate("MainWindow", u"@LanArch1", None))
         self.telegram_link_2.setText(QCoreApplication.translate("MainWindow", u"@cathome", None))
