@@ -145,6 +145,7 @@ class InitBlock(JsonHandler):
             let donationBox = document.getElementById('donation-box');
             donationBox.innerHTML = `
                 <img id="donation-gif" src="${lastDonation.gif}" alt="Donation GIF"><br>
+                <strong>${lastDonation.amount}</strong>💩<br> 
                 <strong>${lastDonation.name}</strong><br> 
                 ${lastDonation.message}
             `;

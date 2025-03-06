@@ -54,12 +54,13 @@ class Server:
 
     def donate(self):
         data = request.json
-        if not all(k in data for k in ['name', 'message', 'sound1', 'sound2', 'gif']):
+        if not all(k in data for k in ['name', 'amount', 'message', 'sound1', 'sound2', 'gif']):
             return jsonify({"error": "Missing required fields"}), 400
 
         donation_data = {
             'id': str(uuid.uuid4()),
             'name': data['name'],
+            'amount': data['amount'],
             'message': data['message'],
             'sound1': f"/sounds/{data['sound1']}",
             'sound2': f"/sounds/temp/{data['sound2']}" if data['sound2'] != "-" else "-",

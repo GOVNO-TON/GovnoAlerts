@@ -175,6 +175,7 @@ class Wallet(InitBlock):
                         
                         data = {
                             "name": donater,
+                            "amount": tx["amount"],
                             "message": filtered_msg,
                             "sound1": alert_paths["audio_path"],
                             # "sound2": "output.mp3", # Сделать обрааботку если донат без войса
