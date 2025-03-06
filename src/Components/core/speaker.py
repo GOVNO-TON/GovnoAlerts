@@ -14,6 +14,7 @@
 
 import os
 import pyaudio
+import threading 
 
 from gtts import gTTS
 from pydub import AudioSegment
@@ -88,7 +89,12 @@ class Speaker:
                 print(f"Ошибка при формировании голосового сообщения: {e}")        
                 return 0
             if os.name == "nt":
-                self.__playsound_win(f"{self.__audio_path[:-4]}_fixed.mp3")  # Для Windows
+                audio_thread = threading.Thread(
+                    target=self.__playsound_win, 
+                    args=(f"{self.__audio_path[:-4]}_fixed.mp3",) 
+                )
+                audio_thread.start()
+                # self.__playsound_win(f"{self.__audio_path[:-4]}_fixed.mp3")  # Для Windows
             else:
                 os.system(f"mpg123 {self.__audio_path[:-4]}_fixed.mp3")  # Для Linux/Macos
 
