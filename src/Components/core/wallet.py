@@ -104,6 +104,20 @@ class Wallet(InitBlock):
             print(f"Ошибка при запросе User_Friendly адреса: {e}")
             return 0
 
+    def check_credentials(self, api_key: str = "", wallet_address: str = "UQDYzZmfsrGzhObKJUw4gzdeIxEai3jAFbiGKGwxvxHinf4K"):
+        try:
+            url = f"{self.__url}accountStates"
+            params = {
+                    "address": wallet_address
+                }
+            if api_key:
+                params["api_key"] = api_key
+            response = requests.get(url, params=params)
+            response.raise_for_status()
+            return True
+        except:
+            return False
+    
     def __decode_message(self, base64_message):
         dedust_flag = "te6cckEBAQEABgAACC4c+oIOFKCh"
         if base64_message == None or base64_message == dedust_flag:
