@@ -37,6 +37,10 @@ class WalletTab:
 
     def save_wallet_raw_adr(self):
         text = str(self.ui.wallet_addr_textbox.toPlainText())
+        is_wallet_valid = self.obs_wallet.check_credentials(wallet_address = text)
+        if not is_wallet_valid:
+            QMessageBox.warning(self, "Ошибка", "Невалидный адрес кошелька")
+            return
         if text != "":
             self.data_wallet["wallet_raw"] = text.replace(' ', '')
             self.save_json(self.JSON_FILE_WALLET, {"wallet_settings": self.data_wallet})
